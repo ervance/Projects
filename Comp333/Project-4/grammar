@@ -1,0 +1,4 @@
+/* Prolog expression Grammar */
+e(X, char_type(X, lower)).
+
+/* Rules */
