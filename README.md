@@ -1,2 +1,2 @@
 # Projects
-Various School Projects **not inclusive
+School Projects **not inclusive
