@@ -1,0 +1,119 @@
+Testing Eric Vance's program.
+QS: book partition, random pivot, cutoff=50: 
+Ï   26.25.24.23.22.21.20.19.18.17.16.15.14.13.12.11.10.9.8.7.6.5.4.3.2.1.0.
+QS: 2ptr partition, random pivot, cutoff=50: 
+Ï   26.25.24.23.22.21.20.19.18.17.16.15.14.13.12.11.10.9.8.7.6.5.4.3.2.1.0.
+QS: book partition, lf pivot, cutoff=50: 
+    26.25.24.23.22.21.20.19.18.17.16.15.14.13.12.11.10.9.8.7.6.5.4.3.2.1.0.
+QS: 2ptr partition, lf pivot, cutoff=50: 
+    26.25.24.23.22.21.20.19.18.17.16.15.14.13.12.11.10.9.8.7.6.5.4.3.2.1.0.
+QS: book partition, random pivot, cutoff=2: 
+    26.25.24.23.22.21.20.19.18.17.16.15.14.13.12.11.10.9.8.7.6.5.4.3.2.1.0.
+QS: 2ptr partition, random pivot, cutoff=2: 
+    26.25.24.23.22.21.20.19.18.17.16.15.14.13.12.11.10.9.8.7.6.5.4.3.2.1.0.
+QS: book partition, lf pivot, cutoff=2: 
+    26.25.24.23.22.21.20.19.18.17.16.15.14.13.12.11.10.9.8.7.6.5.4.3.2.1.0.
+QS: 2ptr partition, lf pivot, cutoff=2: 
+    26.25.24.23.22.21.20.19.18.17.16.15.14.13.12.11.10.9.8.7.6.5.4.3.2.1.0.
+Almost QS book partition, random pivot, cutoff=2: 
+    26.25.24.23.22.21.20.19.18.17.16.15.14.13.12.11.10.9.8.7.6.5.4.3.2.1.0.
+Almost QS 2ptr partition, random pivot, cutoff=2: 
+    26.25.24.23.22.21.20.19.18.17.16.15.14.13.12.11.10.9.8.7.6.5.4.3.2.1.0.
+HeapSortTD: 
+    26.25.24.23.22.21.20.19.18.17.16.15.14.13.12.11.10.9.8.7.6.5.4.3.2.1.0.
+HeapSortBU: 
+    26.25.24.23.22.21.20.19.18.17.16.15.14.13.12.11.10.9.8.7.6.5.4.3.2.1.0.
+Bigger, QS: book partition, random pivot, cutoff=50:
+    100.631.1162.1693.2224.2755.3286.3817.4348.4879.5410.5941.6472.7003.7534.8065.8596.
+    9127.9658.10189.10720.11251.11782.12313.12844.13375.13906.14437.14968.15499.16030.
+    16561.17092.17623.18154.18685.19216.19747. done.
+Bigger, QS: 2ptr partition, random pivot, cutoff=50:
+    100.631.1162.1693.2224.2755.3286.3817.4348.4879.5410.5941.6472.7003.7534.8065.8596.
+    9127.9658.10189.10720.11251.11782.12313.12844.13375.13906.14437.14968.15499.16030.
+    16561.17092.17623.18154.18685.19216.19747. done.
+Bigger, QS: book partition, lf pivot, cutoff=50:
+    100.631.1162.1693.2224.2755.3286.3817.4348.4879.5410.5941.6472.7003.7534.8065.8596.
+    9127.9658.10189.10720.11251.11782.12313.12844.13375.13906.14437.14968.15499.16030.
+    16561.17092.17623.18154.18685.19216.19747. done.
+Bigger, QS: 2ptr partition, lf pivot, cutoff=50:
+    100.631.1162.1693.2224.2755.3286.3817.4348.4879.5410.5941.6472.7003.7534.8065.8596.
+    9127.9658.10189.10720.11251.11782.12313.12844.13375.13906.14437.14968.15499.16030.
+    16561.17092.17623.18154.18685.19216.19747. done.
+Bigger, QS: book partition, random pivot, cutoff=2:
+    100.631.1162.1693.2224.2755.3286.3817.4348.4879.5410.5941.6472.7003.7534.8065.8596.
+    9127.9658.10189.10720.11251.11782.12313.12844.13375.13906.14437.14968.15499.16030.
+    16561.17092.17623.18154.18685.19216.19747. done.
+Bigger, QS: 2ptr partition, random pivot, cutoff=2:
+    100.631.1162.1693.2224.2755.3286.3817.4348.4879.5410.5941.6472.7003.7534.8065.8596.
+    9127.9658.10189.10720.11251.11782.12313.12844.13375.13906.14437.14968.15499.16030.
+    16561.17092.17623.18154.18685.19216.19747. done.
+Bigger, QS: book partition, lf pivot, cutoff=2:
+    100.631.1162.1693.2224.2755.3286.3817.4348.4879.5410.5941.6472.7003.7534.8065.8596.
+    9127.9658.10189.10720.11251.11782.12313.12844.13375.13906.14437.14968.15499.16030.
+    16561.17092.17623.18154.18685.19216.19747. done.
+Bigger, QS: 2ptr partition, lf pivot, cutoff=2:
+    100.631.1162.1693.2224.2755.3286.3817.4348.4879.5410.5941.6472.7003.7534.8065.8596.
+    9127.9658.10189.10720.11251.11782.12313.12844.13375.13906.14437.14968.15499.16030.
+    16561.17092.17623.18154.18685.19216.19747. done.
+Bigger, Almost QS book partition, random pivot, cutoff=2:
+Ï    100.631.1162.1693.2224.2755.3286.3817.4348.4879.5410.5941.6472.7003.7534.8065.8596.
+Ï    9127.9658.10189.10720.11251.11782.12313.12844.13375.13906.14437.14968.15499.16030.
+     16561.17092.17623.18154.18685.19216.19747. done.
+Bigger, Almost QS 2ptr partition, random pivot, cutoff=2:
+Ï    100.631.1162.1693.2224.2755.3286.3817.4348.4879.5410.5941.6472.7003.7534.8065.8596.
+Ï    9127.9658.10189.10720.11251.11782.12313.12844.13375.13906.14437.14968.15499.16030.
+Ï    16561.17092.17623.18154.18685.19216.19747. done.
+Bigger, HeapSortTD:
+    100.631.1162.1693.2224.2755.3286.3817.4348.4879.5410.5941.6472.7003.7534.8065.8596.
+    9127.9658.10189.10720.11251.11782.12313.12844.13375.13906.14437.14968.15499.16030.
+    16561.17092.17623.18154.18685.19216.19747. done.
+Bigger, HeapSortBU:
+    100.631.1162.1693.2224.2755.3286.3817.4348.4879.5410.5941.6472.7003.7534.8065.8596.
+    9127.9658.10189.10720.11251.11782.12313.12844.13375.13906.14437.14968.15499.16030.
+    16561.17092.17623.18154.18685.19216.19747. done.
+
+Testing Eric Vance's sorts on a huge array.
+Ï
+Java's QuickSort on random data runs in 3.039 seconds.
+Java's QuickSort on the test sets runs in 0.967 seconds.
+
+
+Eric Vance's QS: book partition, random pivot, cutoff=50
+    on all random values runs in 3.552 seconds.      Java Ratio = 1.16
+
+Eric Vance's QS: 2ptr partition, random pivot, cutoff=50
+    on all random values runs in 3.245 seconds.      Java Ratio = 1.06
+    on the test sets runs in 1.547 seconds.          Java Ratio = 1.59
+
+Eric Vance's QS: book partition, lf pivot, cutoff=50
+    on all random values runs in 3.795 seconds.      Java Ratio = 1.24
+
+Eric Vance's QS: 2ptr partition, lf pivot, cutoff=50
+    on all random values runs in 3.258 seconds.      Java Ratio = 1.07
+
+Eric Vance's QS: book partition, random pivot, cutoff=2
+    on all random values runs in 4.542 seconds.      Java Ratio = 1.49
+
+Eric Vance's QS: 2ptr partition, random pivot, cutoff=2
+    on all random values runs in 5.220 seconds.      Java Ratio = 1.71
+    on the test sets runs in 3.470 seconds.          Java Ratio = 3.58
+
+Eric Vance's QS: book partition, lf pivot, cutoff=2
+    on all random values runs in 4.306 seconds.      Java Ratio = 1.41
+
+Eric Vance's QS: 2ptr partition, lf pivot, cutoff=2
+    on all random values runs in 5.295 seconds.      Java Ratio = 1.74
+
+Eric Vance's Almost QS book partition, random pivot, cutoff=2
+    on all random values runs in 4.510 seconds.      Java Ratio = 1.48
+ÏÏ
+Eric Vance's Almost QS 2ptr partition, random pivot, cutoff=2
+    on all random values runs in 5.198 seconds.      Java Ratio = 1.71
+
+Eric Vance's HeapSortTD
+    on all random values runs in 9.043 seconds.      Java Ratio = 2.97
+ÏÏ
+Eric Vance's HeapSortBU
+    on all random values runs in 9.092 seconds.      Java Ratio = 2.99
+ÏÏ
+Done testing Eric Vance methods.
