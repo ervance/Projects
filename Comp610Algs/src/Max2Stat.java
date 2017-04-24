@@ -55,11 +55,9 @@ class Max2Stat {
             }
             //try next set of boolean values for each variable
             solutionMap = incrementBoolMap(solutionMap);
-//            for(int j = 0; j < solutionMap.length; j++)
-//                System.out.print(solutionMap[j]);
-//            System.out.println();
         }
-        //to time the brute force method for complexity
+
+        //time the brute force method for complexity
         long finishTime = System.nanoTime();
         runningTime = (finishTime - startTime)/1000000.0;
     }
