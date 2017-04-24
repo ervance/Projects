@@ -1,16 +1,14 @@
-import java.awt.image.AreaAveragingScaleFilter;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 
 class Max2Stat {
 
     private int [] solution;
     private int numberOfVariables, maxTrues;
-    private ArrayList<BooleanClause> clauses;
+    private ArrayList<Clause> clauses;
     private double runningTime;
     private String algorithm;
 
@@ -23,7 +21,7 @@ class Max2Stat {
         algorithm = "";
     }
 
-    public Max2Stat(ArrayList<BooleanClause> clauses, int numberOfVariables){
+    public Max2Stat(ArrayList<Clause> clauses, int numberOfVariables){
         solution = null;
         this.clauses = clauses;
         this.numberOfVariables = numberOfVariables;
@@ -32,230 +30,148 @@ class Max2Stat {
         algorithm = "";
     }
 
+    /*
+    * Brute force approach
+    * Start with a bit string representing True and False assignments
+    * Start at all false ie. 0000
+    * Check total number of clauses satisfied
+    * If it is larger than the previous assignment take it
+    * */
     public void bruteForce(){
         //check every option and choose the highest value
         /******Start running time******/
         long startTime = System.nanoTime();
         algorithm = "Brute Force";
 
-        int variable1, variable2, totalTrues;
-        boolean variable1Neg, variable2Neg, mapBool1, mapBool2;
-        int [] variableBoolMap = setInitialBoolMap(numberOfVariables); //initialized all to true
-
-        //Going to try all options ex: 1 = T 2 = T, 1 = T 2 = F, 1 = F 2 = T, 1 = F 2 = F (N^2 = 4)
-        for(int i =0; i < Math.pow(numberOfVariables, 2); i++) {
-            totalTrues = 0;
-            for (BooleanClause clause : clauses) {
-                variable1 = clause.getVariable1() - 1; //minus one to offset for the array
-                variable2 = clause.getVariable2() - 1;
-                mapBool1 = getBool(variableBoolMap, variable1);//get boolean value of its current map
-                mapBool2 = getBool(variableBoolMap, variable2);
-                variable1Neg = clause.variable1Negated();
-                variable2Neg = clause.variable2Negated();
-                //anding with the negations in case that clause has a negation in it
-                if(variable1Neg)
-                    mapBool1 = !mapBool1;
-                if(variable2Neg)
-                    mapBool2 = !mapBool2;
-                if(mapBool1 || mapBool2)
-                    totalTrues++;
-            }
+        int totalTrues;
+        int [] solutionMap = new int [numberOfVariables];
+        //Try all options ex: 1 = T 2 = T, 1 = T 2 = F, 1 = F 2 = T, 1 = F 2 = F (N^2 = 4)
+        for(int i =0; i < Math.pow(2, numberOfVariables); i++) {
+            totalTrues = countSolutionTrues(clauses, solutionMap);
             if(totalTrues > maxTrues){
                 maxTrues = totalTrues;
                 solution = new int[numberOfVariables];
-                System.arraycopy(variableBoolMap, 0, solution, 0,variableBoolMap.length);
+                System.arraycopy(solutionMap, 0, solution, 0,solutionMap.length);
             }
             //try next set of boolean values for each variable
-            variableBoolMap = incrementBoolMap(variableBoolMap);
+            solutionMap = incrementBoolMap(solutionMap);
+//            for(int j = 0; j < solutionMap.length; j++)
+//                System.out.print(solutionMap[j]);
+//            System.out.println();
         }
-
         //to time the brute force method for complexity
         long finishTime = System.nanoTime();
         runningTime = (finishTime - startTime)/1000000.0;
-
     }
 
+    /*
+    * Greedy Approach
+    * Looks at the maximum number of true propositions from variable
+    * Run through the list and keep track of how many times x1 is negated/non-negated.
+    * Do this for each variable, make the variable with the highest count of negated/non-negated to true.
+    * ie, x1 = 8 -x1 = 9 x2 = 3 -x2 = 8, Set -x1 = False so that it will make any clauses it is in evaluate True.
+    */
     public void maxVariableValue() {
-        /*Looks at the maximum number of true propositions from variable
-        * Run through the list and keep track of how many times x1 is negated/non-negated.
-        * Do this for each variable, assign the truth value to the variable.
-        *
-        * Could be a problem if you the max was paired up ie
-        * (x1 v x2) ... (-x1 vs -x2) could be a bunch of non negated and they are paired.  If there is on with both
-        * negated you could get a better result if you negate either x1 or x2 so you can make that one clause true.
-        *
-        */
         /******Start running time******/
         long startTime = System.nanoTime();
         algorithm = "Max Variable";
-//        List<BooleanClause> clauses = new ArrayList<>(clauses);//so that I dont erase, if we went to run more algs on the clauses
         int arraySize = numberOfVariables * 2;//double the size of variables, starts at 0 for var 1
-        int [] maxVariableValue;
-        ArrayList<BooleanClause> copyClauses = new ArrayList<>(clauses);
+        int [] numberOfLiteralOccur;
+        ArrayList<Clause> copyClauses = new ArrayList<>(clauses);
         ArrayList<Integer> ignoreList = new ArrayList<>();
-
-
-
-//        int [] copyForDebugingMaxVariableValue = new int [maxVariableValue.length];
-//        System.arraycopy(maxVariableValue, 0, copyForDebugingMaxVariableValue, 0,maxVariableValue.length);
-//
-//        int variableNumber = 1;
-//        String printString = "";
-//        for(int i = 0 ; i < (copyForDebugingMaxVariableValue.length)/2; i++) {
-//            printString = printString + "Variable number: " + variableNumber + "\n";
-//            printString = printString + "Number of Trues: " + copyForDebugingMaxVariableValue[i] + "\n";
-//            printString = printString + "Number of Falses: " + copyForDebugingMaxVariableValue[(i + numberOfVariables)];
-//            printString = printString + "\n\n";
-//            variableNumber++;
-//        }
-//        System.out.print(printString);
-//        maxTrues = clauses.size();
         solution = new int[numberOfVariables];
-        //initalizeSolution(maxVariableValue);//sets the truth values based on the highest number to make trues
-        while(!clauses.isEmpty()){
-            System.out.println("Clauses left: " + clauses.size());
-            //maxVariableValue[0] = non negated number for x1 maxVariableValue[11] = negated number of x1
-            //non negations are maxVariableValue[variableValue - 1]
-            //negations are maxVariableValue[variableValue + numberOfVariables]
-            //second half of array is false
-            maxVariableValue = calculateNumLiteralTruths(clauses, arraySize, ignoreList);
-            int indexOfLit = getLargestIntIndex(maxVariableValue); //get the index of the largest number of T or bar
-            int greatestLiteral = literalNum(indexOfLit);//returns which variable it is, ie X1 or X2
-            int variableValue = getLiteralTruth(indexOfLit, greatestLiteral);//this represents the value of the number, - if negated
+
+        while(!copyClauses.isEmpty()){
+            //while there are clauses left, calculate the maximum occurrence of a literal
+            //count how many clauses it satisfies
+            //remove all of the clauses it satisfied or any clause that can no longer be satisfied ie (F v F)
+            //recalculate to find maximum occurrence of a literal
+            //repeat until no more clauses left
+
+            //numberOfLiteralOccur[0] = number of occurrences of x1 in all clauses that are left
+            //numberOfLiteralOccur[11] = number of occurrences of -x1 (x1 bar) in all clauses that are left
+            //numberOfLiteralOccur[currLiteral - 1] is to offset the index ie x1 = index 0, x2 = index 1
+            //numberOfLiteralOccur[currLiteral + numberOfVariables] is the negated of literal. ie -x1, -x2
+
+            //calculate the total occurrences of negated and non-negated literals that are left
+            numberOfLiteralOccur = calculateNumLiteralTruths(copyClauses, arraySize, ignoreList);
+            //get the index of the most occurring literal
+            int indexOfLit = getLargestIntIndex(numberOfLiteralOccur);
+            //returns which variable it is, ie X1 or X2
+            int greatestLiteral = literalNum(indexOfLit);
+            //this represents the value of the number, - if negated
+            //ie. if it is x1 then currLiteral = 1 if -x3 then currLiteral = -3
+            int currLiteral = getLiteralTruth(indexOfLit, greatestLiteral);
             //ignore both negated and truth
-            ignoreList.add(variableValue);
-            ignoreList.add(variableValue * -1);
-            //I think I need to change this initalizeSolution to change only the maximum T or bar to corresponding truth value using greatest literal or indexOfLit
-            //Ie If it was X3 with the most T, and the solution looked like [0,0,0] It would change it to [0,0,1] and then I would need to change X3 count to -1 so ignore it again
-            //I remove all the clauses that are made try by X3 being true
-            //recaluclate how many T or bar there are after that but only for remaining Literals, because now -1 is in place so dont count it, make sure to put the -1 in the right function
-//            initalizeSolution(maxVariableValue);//recalculate the solution to find max number of  T or bar
+            ignoreList.add(currLiteral);
+            ignoreList.add(currLiteral * -1);
 
+            for(int i = 0; i < copyClauses.size(); i++){
+                if(copyClauses.get(i) != null) {
 
-//            maxTrues+= maxVariableValue[indexOfLit];
-            //changes the used literal trues and falses to -1 so that we will not change its truth value anymore
-            maxVariableValue = updateUsedLiterals(maxVariableValue, indexOfLit);
-            int clauseSize = clauses.size();
+                    int var1 = copyClauses.get(i).getVariable1Val();
+                    int var2 = copyClauses.get(i).getVariable2Val();
 
-            for(int i = 0; i < clauses.size(); i++){
-                if(clauses.get(i) != null) {
-//                    int var1 = clauses.get(i).getVariable1Val();
-//                    int var2 = clauses.get(i).getVariable2Val();
-                    int var1 = clauses.get(i).getVariable1Val();
-                    int var2 = clauses.get(i).getVariable2Val();
-                    int trueVal1 = solution[Math.abs(var1) - 1 ];
-                    int trueVal2 = solution[Math.abs(var2) - 1 ];
-//                    boolean var1Neg = var1 < 0 && solution[Math.abs(var1) - 1 ] == 0; //reason we check if it euqals zero at its current solution and if the current literal is negated  and current solution is 0 (meaning it is false) we want to return true
-//                    boolean var2Neg = var2 < 0 && solution[Math.abs(var2) - 1] == 0;
-//                    boolean oneTrue = (trueVal1 == 1 && var1 > 0) || (trueVal2 == 1 && var2 > 0);
-//                    boolean bothTrue = trueVal1 == 1 && trueVal2 == 1;
-
-//                    int variable1 = clauses.get(i).getVariable1() - 1; //minus one to offset for the array
-//                    int variable2 = clauses.get(i).getVariable2() - 1;
-//                    boolean mapBool1 = getBool(solution, variable1);//get boolean value of its current map
-//                    boolean mapBool2 = getBool(solution, variable2);
-//                    boolean variable1Neg = clauses.get(i).variable1Negated();
-//                    boolean variable2Neg = clauses.get(i).variable2Negated();
-//                    if(variable1Neg)
-//                        mapBool1 = !mapBool1;
-//                    if(variable2Neg)
-//                        mapBool2 = !mapBool2;
-//                    if(mapBool1 || mapBool2)
-//                        maxTrues++;
-//                    boolean bothFalse = trueVal1 == 0 && trueVal2 == 0;
-                    boolean literal1 = getBoolValue(var1, trueVal1);
-                    boolean literal2 = getBoolValue(var2, trueVal2);
-                    /**
-                     *
-                     * It is all about the -1 I think i found the current solution but need to check somehow if it is -1 or not and make that a pass
-                     *
-                     *
-                     * when solution is initalized to -1 need to usre that to check if there was a double count.  If it was -1 there was no double count
-                     *
-                     *
-                     * NEED TO FIX WHERE IT CHECKS IF THE TRUE VALUE UWAS INITIATED BEFORE IT DEALS WITH THE DOUBLE COUNT AND SUBRATCT 1
-                     *
-                     *
-                     * if one is true
-                     *
-                     *
-                     * Need to add to the total trues here
-                     *
-                     * Maybe do the check for -1 here to skip something if need be, like keep it unitl they are not -1
-                     */
-                    //or current solution truth value used for those two clause both equal false
-//                    if (var1Neg || var2Neg || oneTrue || bothTrue)
-//                        maxTrues++;
-//                    if (bothTrue || (var1Neg && var2Neg) || (bothFalse && !var1Neg && !var2Neg))
-//                        maxTrues--;
-
-                    if(var1 == variableValue || var2 == variableValue) {//if either literal contains the literal we set to true remove
-                        clauses.remove(i);
+                    //if clause contains the literal count as true and remove
+                    if(var1 == currLiteral || var2 == currLiteral) {
+                        copyClauses.remove(i);
                         maxTrues++;
                         i--;
                     }
+                    //both of the variables in the clause are False so remove
                     else if (ignoreList.contains(var1) && ignoreList.contains(var2))
-                        clauses.remove(i);
-
-                        //clauses.add(i, null);
-
+                        copyClauses.remove(i);
                 }
             }
-
         }
-        clauses = copyClauses;
+        //run modified brute force for a more accurate answer
         bruteMod(maxTrues);
-        //maxTrues (THIS IS GOING TO RUIN RUN TIME
-//        for(int i = 0; i < clauses.size(); i++){
-//            int var1 = clauses.get(i).getVariable1Val();
-//            int var2 = clauses.get(i).getVariable2Val();
-//            boolean var1Neg = var1 < 0 && solution[Math.abs(var1) - 1] == 0; //reason we check if it euqals zero at its current solution and if the current literal is negated  and current solution is 0 (meaning it is false) we want to return true
-//            boolean var2Neg = var2 < 0 && solution[Math.abs(var2) - 1] == 0;
-//            if (!(var1Neg || var2Neg))//there is a double count need to subtract it
-//                maxTrues--;
-//
-//        }
 
-        //to time the brute force method for complexity
+        //finish timing the algorithm
         long finishTime = System.nanoTime();
         runningTime = (finishTime - startTime)/1000000.0;
-
-
     }
 
+    /*
+    * used in conjunction with the greedy max variable
+    * to brute force a more accurate answer
+    * */
     private void bruteMod(int target){
+        //this is used in conjunction with the maxVariableValue
+        //run this after the greedy method has found an answer
         int maxFalses = clauses.size() - target;
         int variable1, variable2, totalTrues, totalFalses;
         boolean variable1Neg, variable2Neg, mapBool1, mapBool2;
-        int [] variableBoolMap = setInitialBoolMap(numberOfVariables); //initialized all to true
+        int [] variableBoolMap = new int[numberOfVariables];
 
-        totalFalses = 0;
         //Going to try all options ex: 1 = T 2 = T, 1 = T 2 = F, 1 = F 2 = T, 1 = F 2 = F (N^2 = 4)
-        for(int i =0; i < Math.pow(numberOfVariables, 2); i++) {
+        for(int i =0; i < Math.pow(2, numberOfVariables); i++) {
             totalTrues = 0;
             totalFalses = 0;
-            for (BooleanClause clause : clauses) {
+            for (Clause clause : clauses) {
                 variable1 = clause.getVariable1() - 1; //minus one to offset for the array
                 variable2 = clause.getVariable2() - 1;
                 mapBool1 = getBool(variableBoolMap, variable1);//get boolean value of its current map
                 mapBool2 = getBool(variableBoolMap, variable2);
                 variable1Neg = clause.variable1Negated();
                 variable2Neg = clause.variable2Negated();
-                //anding with the negations in case that clause has a negation in it
+                //if variable is negated in clause
                 if(variable1Neg)
                     mapBool1 = !mapBool1;
                 if(variable2Neg)
                     mapBool2 = !mapBool2;
+
+                //check if it makes clause true
                 if(mapBool1 || mapBool2)
                     totalTrues++;
                 else
                     totalFalses++;
-
+                //Stop current brute force solution check if the solution is already worse than the greedy has produced
                 if(totalFalses > maxFalses){
-                    System.out.println("Stop. Total False: " + totalFalses + " Max False: " + maxFalses);
                     break;
                 }
             }
+
             if(totalTrues > maxTrues){
                 maxTrues = totalTrues;
                 solution = new int[numberOfVariables];
@@ -263,9 +179,82 @@ class Max2Stat {
             }
             //try next set of boolean values for each variable
             variableBoolMap = incrementBoolMap(variableBoolMap);
-            
+
         }
 
+    }
+
+    /*
+    *  Solution:        Will be represented as a string of bits
+    *  Closeness:       A neighbor is close if they differ by 1 bit. ie.  0000 1000 0100 0010 0001 are all neighbors.
+    *  Movement:        Calculate all neighbors.  A move will be made if there is a solution that is at least as good
+    *                   as the current one. (in other terms if the neighbor increases or is equal to the total clauses
+    *                   satisfied move to that neighbor.
+    *  Stop Condition:  If no moves were made, ie all neighbors satisfy less clauses.  The algorithm will terminate
+    *
+    */
+
+    public void localSearch(){
+        long startTime = System.nanoTime();
+        algorithm = "Local Search";
+        int tempCount;//holds the temp satisfied clause count to compare
+        //initialize solution to start at all false
+        int [] mostSatisfiedClauseSolution = new int [numberOfVariables];
+        solution = new int [numberOfVariables];
+        //each neighbor is one bit difference
+        //flip the bit and take the neighbor that has the highest value
+        //start with all false
+        int satisfiedClauses = countSolutionTrues(clauses, mostSatisfiedClauseSolution);
+        //stopping condition will be when no other neighbor increases the total clauses satisfied
+        boolean stoppingConditionMet = false;
+        while(!stoppingConditionMet) {
+            stoppingConditionMet = true;//reset so if no neighbors are found to be larger it will stop
+            for (int i = 0; i < solution.length; i++) {
+                //flip bits to test neighbors that differ by 1
+                //skip any that are 1 because that was part of a previous neighbor
+                if(mostSatisfiedClauseSolution[i] == 0){
+                    mostSatisfiedClauseSolution[i] = 1;
+                    tempCount = countSolutionTrues(clauses, mostSatisfiedClauseSolution);
+                    if(tempCount >= satisfiedClauses) {
+                        //neighbor had a larger truth satisfied
+                        satisfiedClauses = tempCount;//current largest amount of clauses satisfied
+                        //solution is the current truth assignment
+                        System.arraycopy(mostSatisfiedClauseSolution, 0, solution, 0,mostSatisfiedClauseSolution.length);
+                        stoppingConditionMet = false;//stopping condition has not been met
+                        mostSatisfiedClauseSolution[i] = 0;//flip bit back to try other neighbors
+                    }
+                    else{
+                        //solution is not larger
+                        mostSatisfiedClauseSolution[i] = 0;
+                    }
+                }
+            }
+            //move to the neighbor that had the largest amount of clauses satisfied
+            System.arraycopy(solution, 0, mostSatisfiedClauseSolution, 0,solution.length);
+        }
+        //check if any trues would yield more if any were false
+        System.arraycopy(solution, 0, mostSatisfiedClauseSolution, 0,solution.length);
+        for(int i = 0; i < solution.length; i++){
+            //skip any of the truth assignments that are false already
+            if(mostSatisfiedClauseSolution[i] == 1){
+                mostSatisfiedClauseSolution[i] = 0;
+                tempCount = countSolutionTrues(clauses, mostSatisfiedClauseSolution);
+                //if flipping that bit to false yields more clauses take that solution
+                if(tempCount >= satisfiedClauses){
+                    satisfiedClauses = tempCount;
+                    System.arraycopy(mostSatisfiedClauseSolution, 0, solution, 0,mostSatisfiedClauseSolution.length);
+                    mostSatisfiedClauseSolution[i] = 1;
+                }
+                else
+                    //do not take that that solution, previous is better
+                    mostSatisfiedClauseSolution[i] = 1;
+            }
+
+        }
+        maxTrues = satisfiedClauses;
+
+        long finishTime = System.nanoTime();
+        runningTime = (finishTime - startTime)/1000000.0;
     }
 
     private int getLiteralTruth(int indexOfLit, int greatestLiteral){
@@ -283,26 +272,11 @@ class Max2Stat {
         return variableValue;
     }
 
-    private int [] updateUsedLiterals(int [] literalArray, int indexOfLit){
-
-        //top is if the index is on false side
-        if(indexOfLit > numberOfVariables - 1) {
-            literalArray[indexOfLit] = -1;//this is to zero it out so we dont choose it again
-            literalArray[indexOfLit - numberOfVariables] = -1;
-        }
-        else {//index is on true side
-            literalArray[indexOfLit] = -1;
-            literalArray[indexOfLit + numberOfVariables] = -1;
-        }
-
-        return literalArray;
-    }
-
-    private int [] calculateNumLiteralTruths(ArrayList<BooleanClause> clauses, int arraySize, ArrayList<Integer> ignoreList){
+    private int [] calculateNumLiteralTruths(ArrayList<Clause> clauses, int arraySize, ArrayList<Integer> ignoreList){
 
         int [] literalTruths = new int [arraySize];
 
-        for (BooleanClause clause : clauses) {
+        for (Clause clause : clauses) {
             //count how many negations or non negations there are
             //whichever is the max, assign that truth value
             int clause1 = clause.getVariable1();
@@ -327,21 +301,6 @@ class Max2Stat {
 
     }
 
-    private void initalizeSolution(int [] literaValues){
-
-        for(int i = 0; i < solution.length; i++){
-            if(literaValues[i] > literaValues[i + numberOfVariables]) {
-                solution[i] = 1;//means it is true
-            }
-            else if(literaValues[i] == -1){
-                //do nothing because a truth has been assigned to it
-            }
-            else {
-                solution[i] = 0;//the literal has a bar and should be false
-            }
-        }
-    }
-
     private int literalNum(int index){//returns the variable number, ie X1 or X2
         int literalNum;
 
@@ -352,7 +311,6 @@ class Max2Stat {
 
         return literalNum;
     }
-
 
     private int getLargestIntIndex(int [] literals){
         int intIndex, largest;
@@ -371,16 +329,11 @@ class Max2Stat {
         return boolMap[variable] == 1;
     }
 
-    private int[] setInitialBoolMap(int n){
-        //creates a map try try all different bool value combinations
-        //uses a binary representation to simulate the different combinations
-        //example nuberOfVariables = 4 booleanValueMap = [0,0,0,0]
-        int [] bitValues = new int [n];
-        for(int i = 0; i < bitValues.length; i++)
-            bitValues[i] = 0;//set it to 0
-        return bitValues;
-    }
-
+    /*
+    *  Utilized for the brute force method
+    *  increments the current truth assignments to
+    *  check every possibility
+    */
     private int [] incrementBoolMap(int [] boolMap){
         //does binary addition to try every combination of True and False
         int carry, currentValue, counter;
@@ -402,22 +355,12 @@ class Max2Stat {
         return boolMap;
     }
 
-    private boolean getBoolValue(int literal, int truthAs){
-        boolean boolVal;
-
-        if(literal < 0)
-            boolVal = truthAs != 1;
-        else
-            boolVal = truthAs == 1;
-
-        return boolVal;
-    }
-
-    public int countSolutionTrues(ArrayList<BooleanClause> clauses, int [] solution){
+    //returns the total number of clauses satisfied by the current True False assignment
+    public int countSolutionTrues(ArrayList<Clause> clauses, int [] solution){
         int variable1, variable2, totalTrues;
         boolean variable1Neg, variable2Neg, mapBool1, mapBool2;
         totalTrues = 0;
-        for (BooleanClause clause : clauses) {
+        for (Clause clause : clauses) {
             variable1 = clause.getVariable1() - 1; //minus one to offset for the array
             variable2 = clause.getVariable2() - 1;
             mapBool1 = getBool(solution, variable1);//get boolean value of its current map
@@ -435,6 +378,8 @@ class Max2Stat {
 
         return totalTrues;
     }
+
+    //to verify total clause assignment for strings of T and F
     public int [] createSolution(String tfString){
         int [] solution = new int [tfString.length()];
         for (int i = 0; i < tfString.length(); i++ ){
@@ -448,13 +393,9 @@ class Max2Stat {
         return solution;
     }
 
-    public ArrayList<BooleanClause> getClauses(){
-        return clauses;
-    }
     @Override
     public String toString(){
 
-        String clausesString = "";
         String solutionString = "";
 
         for (int bool:solution) {
@@ -464,17 +405,11 @@ class Max2Stat {
                 solutionString+= "F";
         }
 
-//        for (BooleanClause clause: clauses) {
-//            clausesString+= clause + "\n";
-//        }
-
         return "Algorithm used: " +algorithm +
                 "\nRunning time (milliseconds): " + runningTime +
                 "\nNumber of variables: " + numberOfVariables +
                 "\nMax Number of Trues: "+maxTrues +
                 "\nSolution: " + solutionString;
-                //"\nClauses:\n" + clausesString;
-
     }
 
 }
@@ -488,7 +423,7 @@ class ReadTextFile {
         BufferedReader bufferReader = null;
         String booleanClause;
         String [] booleanSplit;
-        ArrayList<BooleanClause> clauses = new ArrayList<>();
+        ArrayList<Clause> clauses = new ArrayList<>();
         int firstClause, secondClause, numberOfVariables;
         numberOfVariables = 0;
         try{
@@ -499,7 +434,7 @@ class ReadTextFile {
                     if (booleanSplit.length == 2) {//added in case input.txt has less than 2 items after split
                         firstClause = Integer.parseInt(booleanSplit[0]);
                         secondClause = Integer.parseInt(booleanSplit[1]);
-                        clauses.add(new BooleanClause(firstClause, secondClause));
+                        clauses.add(new Clause(firstClause, secondClause));
                         if(numberOfVariables < Math.abs(firstClause))
                             numberOfVariables = Math.abs(firstClause);
                         if (numberOfVariables < Math.abs(secondClause))
@@ -522,8 +457,8 @@ class ReadTextFile {
 
 }
 
-//Holds pair of booleans in the clause statement
-class BooleanClause {
+//Clause statement
+class Clause {
 
     private int variable1Val;//negated or not
     private int variable2Val;
@@ -532,10 +467,8 @@ class BooleanClause {
     private int variable2;
 
     private boolean variable1Bool, variable2Bool;
-    //added for greedy take max alg
-    private boolean greedyCheck = false;
 
-    public BooleanClause(int variable1Bool, int variable2Bool){
+    Clause(int variable1Bool, int variable2Bool){
         //set the boolean values
         this.variable1Bool = variable1Bool <= 0;
         this.variable2Bool = variable2Bool <= 0;
