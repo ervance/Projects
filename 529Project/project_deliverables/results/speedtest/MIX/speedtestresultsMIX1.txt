@@ -1,0 +1,186 @@
+---------------  ------------------
+Click Element:   MIX
+Test PCAP        speedtestMIX1.pcap
+Click PCAP       Raw
+Size Click PCAP  174887
+Details:         71TCP Connections
+Total Packets:   353312
+---------------  ------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                                                IP                 Total Frames    Total Bytes    Relative Start    Duration
+------  --------------------------------------------------  ---------------  --------------  -------------  ----------------  ----------
+     1  eng.lax0.atlanticmetro.net                          208.78.31.118             23852       26696547            20.031       18.51
+     2  eng.lax0.atlanticmetro.net                          208.78.31.118             20025       22161125            20.031       18.56
+     3  eng.lax0.atlanticmetro.net                          208.78.31.118             19521       20416866            20.031       18.51
+     4  eng.lax0.atlanticmetro.net                          208.78.31.118             16663       17068872            21.072       17.52
+     5  eng.lax0.atlanticmetro.net                          208.78.31.118             15686       17050578            21.071       17.47
+     6  eng.lax0.atlanticmetro.net                          208.78.31.118             15595       17096554            21.072       17.51
+     7  eng.lax0.atlanticmetro.net                          208.78.31.118             15278       15442629            39.618       15.23
+     8  eng.lax0.atlanticmetro.net                          208.78.31.118             14742       14879805            39.619       15.22
+     9  eng.lax0.atlanticmetro.net                          208.78.31.118             14678       14875581            39.617       15.23
+    10  eng.lax0.atlanticmetro.net                          208.78.31.118             14406       14477729            39.618       15.23
+    11  eng.lax0.atlanticmetro.net                          208.78.31.118             13675       13801971            40.108       14.74
+    12  eng.lax0.atlanticmetro.net                          208.78.31.118             13378       13520841            40.109       14.73
+    13  eng.lax0.atlanticmetro.net                          208.78.31.118             13265       13377503            40.107       14.74
+    14  eng.lax0.atlanticmetro.net                          208.78.31.118             12965       13103463            40.106       14.74
+    15  eng.lax0.atlanticmetro.net                          208.78.31.118             12436       12170218            20.519       18.07
+    16  eng.lax0.atlanticmetro.net                          208.78.31.118             11572       11709665            40.105       14.74
+    17  eng.lax0.atlanticmetro.net                          208.78.31.118             11233       12928007            21.071       17.52
+    18  eng.lax0.atlanticmetro.net                          208.78.31.118             11229       11852426            20.519       18.07
+    19  eng.lax0.atlanticmetro.net                          208.78.31.118             11159       11289367            41.11        13.74
+    20  eng.lax0.atlanticmetro.net                          208.78.31.118             10595       10730523            41.609       13.24
+    21  eng.lax0.atlanticmetro.net                          208.78.31.118             10518       10552276            20.031       18.51
+    22  eng.lax0.atlanticmetro.net                          208.78.31.118             10351       10451419            41.109       13.73
+    23  eng.lax0.atlanticmetro.net                          208.78.31.118              9612        9625325            43.111       11.73
+    24  eng.lax0.atlanticmetro.net                          208.78.31.118              8477        8435976            21.072       17.52
+    25  eng.lax0.atlanticmetro.net                          208.78.31.118              8164        8222057            44.112       10.73
+    26  eng.lax0.atlanticmetro.net                          208.78.31.118              5585        5429595            30.484        8.06
+    27  eng.lax0.atlanticmetro.net                          208.78.31.118              4033        4468812            26.464       12.12
+    28  a23-72-91-112.deploy.static.akamaitechnologies.com  23.72.91.112               1115        1037320            30.064        1.21
+    29  N\A                                                 151.101.1.140               376         307348            22.04         1.31
+    29  N\A                                                 151.101.0.133               216         179373            26.811       31
+    29  lax02s22-in-f36.1e100.net                           216.58.216.36               194         125007            17.12         0.69
+    30  lax28s10-in-f14.1e100.net                           172.217.5.206               162         103938            23.798        1.23
+    31  N\A                                                 151.101.0.133               144         111499            26.49        31.34
+    31  N\A                                                 151.101.1.140               118          76820            22.049        1.54
+    31  N\A                                                 151.101.1.140                76          41710            21.289        1.96
+    31  N\A                                                 151.101.1.140                76          43726            22.061        0.55
+    31  N\A                                                 192.30.255.113               62          34365            25.786       10.59
+    31  ec2-52-10-243-169.us-west-2.compute.amazonaws.com   52.10.243.169                60          37872            29.209        9.05
+    32  eng.lax0.atlanticmetro.net                          208.78.31.118                50           4446            15.748        0.51
+    33  N\A                                                 151.101.0.133                45          28339            26.491        0.55
+    33  a23-72-91-112.deploy.static.akamaitechnologies.com  23.72.91.112                 40          25293            29.971        0.29
+    34  lax28s15-in-f14.1e100.net                           172.217.11.174               38           9947            27.789        0.48
+    35  lax17s15-in-f78.1e100.net                           172.217.5.78                 37           8188            27.639        0.58
+    36  N\A                                                 151.101.1.140                36          10867            23.212        0.45
+    36  N\A                                                 192.30.255.116               35          11419            28.324       10.8
+    36  lax28s10-in-f14.1e100.net                           172.217.5.206                34           7839            24.424        0.44
+    37  N\A                                                 192.30.255.113               27           6801            27.656       10.42
+    37  N\A                                                 151.101.193.140              26           6875            22.082        0.53
+    37  ec2-52-71-213-54.compute-1.amazonaws.com            52.71.213.54                 26           8013            22.886       31.31
+    38  N\A                                                 151.101.1.140                26           6814            23.388        0.45
+    38  N\A                                                 151.101.1.140                25           6671            23.224        0.48
+    38  N\A                                                 192.30.255.113               24           6226            25.348        0.5
+    38  ec2-52-10-243-169.us-west-2.compute.amazonaws.com   52.10.243.169                20           7623            29.975        1.38
+    39  ec2-52-7-136-125.compute-1.amazonaws.com            52.7.136.125                 19           6917            27.608        0.61
+    40  ec2-52-71-213-54.compute-1.amazonaws.com            52.71.213.54                 18           2249            23.406       30.79
+    41  ec2-52-71-213-54.compute-1.amazonaws.com            52.71.213.54                 18           2265            23.407       30.79
+    42  ec2-52-71-213-54.compute-1.amazonaws.com            52.71.213.54                 18           2250            23.407       30.8
+    43  a23-72-91-112.deploy.static.akamaitechnologies.com  23.72.91.112                 18           6877            30.208        0.18
+    44  a23-72-91-112.deploy.static.akamaitechnologies.com  23.72.91.112                 16           6082            30.207        0.2
+    45  ec2-52-10-243-169.us-west-2.compute.amazonaws.com   52.10.243.169                15           4461            31.295        0.29
+    46  ec2-52-10-243-169.us-west-2.compute.amazonaws.com   52.10.243.169                15           4189            31.295        0.32
+    47  ec2-52-10-243-169.us-west-2.compute.amazonaws.com   52.10.243.169                15           4236            31.296        0.31
+    48  ec2-52-10-243-169.us-west-2.compute.amazonaws.com   52.10.243.169                15           4203            31.296        0.31
+    49  msnbot-65-52-108-183.search.msn.com                 65.52.108.183                10           1096            20.752       45.19
+    50  N\A                                                 72.21.92.82                   9           2519            54.815        0.24
+    50  N\A                                                 72.21.92.82                   3            162            14.289        0
+    50  ec2-52-204-126-112.compute-1.amazonaws.com          52.204.126.112                3            206            23.044        0.15
+    51  ec2-52-45-81-83.compute-1.amazonaws.com             52.45.81.83                   3            206            27.739        0.18
+    52  N\A                                                 192.30.255.117                3            206            28.45         0.14
+    52  ec2-52-11-166-44.us-west-2.compute.amazonaws.com    52.11.166.44                  3            206            31.463        0.11
+    53  ec2-52-11-166-44.us-west-2.compute.amazonaws.com    52.11.166.44                  3            206            31.464        0.12
+
+---------------  ------------------
+Click Element:   MIX
+Test PCAP        speedtestMIX1.pcap
+Click PCAP       Shaped
+Size Click PCAP  174887
+Details:         7TCP Connections
+Total Packets:   287
+---------------  ------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                        IP               Total Frames    Total Bytes    Relative Start    Duration
+------  --------------------------  -------------  --------------  -------------  ----------------  ----------
+     1  lax02s22-in-f36.1e100.net   216.58.216.36             194         125007            17.12         0.69
+     2  eng.lax0.atlanticmetro.net  208.78.31.118              50           4446            15.748        0.51
+     3  eng.lax0.atlanticmetro.net  208.78.31.118              10           1303            20.031        0.11
+     4  eng.lax0.atlanticmetro.net  208.78.31.118              10           1303            20.031        0.11
+     5  eng.lax0.atlanticmetro.net  208.78.31.118               9           1237            20.031        0.12
+     6  eng.lax0.atlanticmetro.net  208.78.31.118               8           1150            20.031        0.11
+     7  N\A                         72.21.92.82                 3            162            14.289        0
+
+---------------  ------------------
+Click Element:   MIX
+Test PCAP        speedtestMIX1.pcap
+Click PCAP       Unshaped
+Size Click PCAP  174887
+Details:         68TCP Connections
+Total Packets:   353025
+---------------  ------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                                                IP                 Total Frames    Total Bytes    Relative Start    Duration
+------  --------------------------------------------------  ---------------  --------------  -------------  ----------------  ----------
+     1  eng.lax0.atlanticmetro.net                          208.78.31.118             23842       26695244             0.003       18.39
+     2  eng.lax0.atlanticmetro.net                          208.78.31.118             20016       22159888             0           18.43
+     3  eng.lax0.atlanticmetro.net                          208.78.31.118             19511       20415563             0.003       18.39
+     4  eng.lax0.atlanticmetro.net                          208.78.31.118             16663       17068872             0.918       17.52
+     5  eng.lax0.atlanticmetro.net                          208.78.31.118             15686       17050578             0.917       17.47
+     6  eng.lax0.atlanticmetro.net                          208.78.31.118             15595       17096554             0.918       17.51
+     7  eng.lax0.atlanticmetro.net                          208.78.31.118             15278       15442629            19.464       15.23
+     8  eng.lax0.atlanticmetro.net                          208.78.31.118             14742       14879805            19.465       15.22
+     9  eng.lax0.atlanticmetro.net                          208.78.31.118             14678       14875581            19.463       15.23
+    10  eng.lax0.atlanticmetro.net                          208.78.31.118             14406       14477729            19.464       15.23
+    11  eng.lax0.atlanticmetro.net                          208.78.31.118             13675       13801971            19.954       14.74
+    12  eng.lax0.atlanticmetro.net                          208.78.31.118             13378       13520841            19.955       14.73
+    13  eng.lax0.atlanticmetro.net                          208.78.31.118             13265       13377503            19.953       14.74
+    14  eng.lax0.atlanticmetro.net                          208.78.31.118             12965       13103463            19.952       14.74
+    15  eng.lax0.atlanticmetro.net                          208.78.31.118             12436       12170218             0.366       18.07
+    16  eng.lax0.atlanticmetro.net                          208.78.31.118             11572       11709665            19.951       14.74
+    17  eng.lax0.atlanticmetro.net                          208.78.31.118             11233       12928007             0.917       17.52
+    18  eng.lax0.atlanticmetro.net                          208.78.31.118             11229       11852426             0.365       18.07
+    19  eng.lax0.atlanticmetro.net                          208.78.31.118             11159       11289367            20.956       13.74
+    20  eng.lax0.atlanticmetro.net                          208.78.31.118             10595       10730523            21.456       13.24
+    21  eng.lax0.atlanticmetro.net                          208.78.31.118             10510       10551126             0.001       18.39
+    22  eng.lax0.atlanticmetro.net                          208.78.31.118             10351       10451419            20.955       13.73
+    23  eng.lax0.atlanticmetro.net                          208.78.31.118              9612        9625325            22.958       11.73
+    24  eng.lax0.atlanticmetro.net                          208.78.31.118              8477        8435976             0.918       17.52
+    25  eng.lax0.atlanticmetro.net                          208.78.31.118              8164        8222057            23.959       10.73
+    26  eng.lax0.atlanticmetro.net                          208.78.31.118              5585        5429595            10.33         8.06
+    27  eng.lax0.atlanticmetro.net                          208.78.31.118              4033        4468812             6.311       12.12
+    28  a23-72-91-112.deploy.static.akamaitechnologies.com  23.72.91.112               1115        1037320             9.91         1.21
+    29  N\A                                                 151.101.1.140               376         307348             1.887        1.31
+    29  N\A                                                 151.101.0.133               216         179373             6.657       31
+    29  lax28s10-in-f14.1e100.net                           172.217.5.206               162         103938             3.645        1.23
+    30  N\A                                                 151.101.0.133               144         111499             6.337       31.34
+    30  N\A                                                 151.101.1.140               118          76820             1.895        1.54
+    30  N\A                                                 151.101.1.140                76          41710             1.135        1.96
+    30  N\A                                                 151.101.1.140                76          43726             1.907        0.55
+    30  N\A                                                 192.30.255.113               62          34365             5.632       10.59
+    30  ec2-52-10-243-169.us-west-2.compute.amazonaws.com   52.10.243.169                60          37872             9.055        9.05
+    31  N\A                                                 151.101.0.133                45          28339             6.337        0.55
+    31  a23-72-91-112.deploy.static.akamaitechnologies.com  23.72.91.112                 40          25293             9.818        0.29
+    32  lax28s15-in-f14.1e100.net                           172.217.11.174               38           9947             7.635        0.48
+    33  lax17s15-in-f78.1e100.net                           172.217.5.78                 37           8188             7.485        0.58
+    34  N\A                                                 151.101.1.140                36          10867             3.058        0.45
+    34  N\A                                                 192.30.255.116               35          11419             8.17        10.8
+    34  lax28s10-in-f14.1e100.net                           172.217.5.206                34           7839             4.27         0.44
+    35  N\A                                                 192.30.255.113               27           6801             7.502       10.42
+    35  N\A                                                 151.101.193.140              26           6875             1.928        0.53
+    35  ec2-52-71-213-54.compute-1.amazonaws.com            52.71.213.54                 26           8013             2.732       31.31
+    36  N\A                                                 151.101.1.140                26           6814             3.235        0.45
+    36  N\A                                                 151.101.1.140                25           6671             3.071        0.48
+    36  N\A                                                 192.30.255.113               24           6226             5.194        0.5
+    36  ec2-52-10-243-169.us-west-2.compute.amazonaws.com   52.10.243.169                20           7623             9.822        1.38
+    37  ec2-52-7-136-125.compute-1.amazonaws.com            52.7.136.125                 19           6917             7.455        0.61
+    38  ec2-52-71-213-54.compute-1.amazonaws.com            52.71.213.54                 18           2249             3.252       30.79
+    39  ec2-52-71-213-54.compute-1.amazonaws.com            52.71.213.54                 18           2265             3.253       30.79
+    40  ec2-52-71-213-54.compute-1.amazonaws.com            52.71.213.54                 18           2250             3.253       30.8
+    41  a23-72-91-112.deploy.static.akamaitechnologies.com  23.72.91.112                 18           6877            10.054        0.18
+    42  a23-72-91-112.deploy.static.akamaitechnologies.com  23.72.91.112                 16           6082            10.053        0.2
+    43  ec2-52-10-243-169.us-west-2.compute.amazonaws.com   52.10.243.169                15           4461            11.141        0.29
+    44  ec2-52-10-243-169.us-west-2.compute.amazonaws.com   52.10.243.169                15           4189            11.142        0.32
+    45  ec2-52-10-243-169.us-west-2.compute.amazonaws.com   52.10.243.169                15           4236            11.142        0.31
+    46  ec2-52-10-243-169.us-west-2.compute.amazonaws.com   52.10.243.169                15           4203            11.143        0.31
+    47  msnbot-65-52-108-183.search.msn.com                 65.52.108.183                10           1096             0.598       45.19
+    48  N\A                                                 72.21.92.82                   9           2519            34.661        0.24
+    48  ec2-52-204-126-112.compute-1.amazonaws.com          52.204.126.112                3            206             2.89         0.15
+    49  ec2-52-45-81-83.compute-1.amazonaws.com             52.45.81.83                   3            206             7.585        0.18
+    50  N\A                                                 192.30.255.117                3            206             8.296        0.14
+    50  ec2-52-11-166-44.us-west-2.compute.amazonaws.com    52.11.166.44                  3            206            11.309        0.11
+    51  ec2-52-11-166-44.us-west-2.compute.amazonaws.com    52.11.166.44                  3            206            11.31         0.12
+
+

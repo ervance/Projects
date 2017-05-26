@@ -1,0 +1,108 @@
+---------------  -------------------
+Click Element:   ONLY
+Test PCAP        speedtestONLY2.pcap
+Click PCAP       Raw
+Size Click PCAP  37877
+Details:         32TCP Connections
+Total Packets:   360321
+---------------  -------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                                 IP                Total Frames    Total Bytes    Relative Start    Duration
+------  -----------------------------------  --------------  --------------  -------------  ----------------  ----------
+     1  eng.lax0.atlanticmetro.net           208.78.31.118            27321       31711789            18.749       14.29
+     2  eng.lax0.atlanticmetro.net           208.78.31.118            20215       21689079            17.746       15.83
+     3  eng.lax0.atlanticmetro.net           208.78.31.118            17804       19928899            19.248       13.81
+     4  eng.lax0.atlanticmetro.net           208.78.31.118            17801       17945139            34.004       15.99
+     5  eng.lax0.atlanticmetro.net           208.78.31.118            17582       17794881            34.006       16.02
+     6  eng.lax0.atlanticmetro.net           208.78.31.118            16815       16971319            34.003       16.02
+     7  eng.lax0.atlanticmetro.net           208.78.31.118            16609       18148745            18.75        14.83
+     8  eng.lax0.atlanticmetro.net           208.78.31.118            16113       16175199            35.509       14.49
+     9  eng.lax0.atlanticmetro.net           208.78.31.118            15943       16028111            35.507       14.49
+    10  eng.lax0.atlanticmetro.net           208.78.31.118            15862       16068781            34.005       15.99
+    11  eng.lax0.atlanticmetro.net           208.78.31.118            15762       15884665            35.51        14.49
+    12  eng.lax0.atlanticmetro.net           208.78.31.118            15542       15731345            35.506       14.52
+    13  eng.lax0.atlanticmetro.net           208.78.31.118            15433       15594111            35.505       14.52
+    14  eng.lax0.atlanticmetro.net           208.78.31.118            14364       14490537            35.508       14.49
+    15  eng.lax0.atlanticmetro.net           208.78.31.118            13115       13504749            17.747       17.31
+    16  eng.lax0.atlanticmetro.net           208.78.31.118            13055       13254544            17.746       17.32
+    17  eng.lax0.atlanticmetro.net           208.78.31.118            12951       13262721            18.749       16.55
+    18  eng.lax0.atlanticmetro.net           208.78.31.118            11703       11878789            17.747       15.69
+    19  eng.lax0.atlanticmetro.net           208.78.31.118            11664       11824045            18.748       14.53
+    20  eng.lax0.atlanticmetro.net           208.78.31.118            11468       11389511            18.749       14.56
+    21  eng.lax0.atlanticmetro.net           208.78.31.118            10629       10729847            40.509        9.49
+    22  eng.lax0.atlanticmetro.net           208.78.31.118            10594       11263060            23.755        9.3
+    23  eng.lax0.atlanticmetro.net           208.78.31.118            10423        9517429            18.749       14.46
+    24  eng.lax0.atlanticmetro.net           208.78.31.118             6093        5879810            21.754       11.99
+    25  eng.lax0.atlanticmetro.net           208.78.31.118             5309        5106966            22.755       10.31
+    26  eng.lax0.atlanticmetro.net           208.78.31.118               50           4446            15.616        0.52
+    27  N\A                                  17.248.129.200              26          10519            26.126        0.51
+    27  N\A                                  72.21.92.82                  9           2520            49.97         0.23
+    27  N\A                                  151.101.1.69                 6            449            45.093        0.1
+    27  msnbot-65-52-108-183.search.msn.com  65.52.108.183                5            548            18.709        0.21
+    28  N\A                                  17.249.28.18                 4            418             5.456        0
+    28  N\A                                  72.21.92.82                  3            162            12.88         0
+
+---------------  -------------------
+Click Element:   ONLY
+Test PCAP        speedtestONLY2.pcap
+Click PCAP       Shaped
+Size Click PCAP  37877
+Details:         7TCP Connections
+Total Packets:   100
+---------------  -------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                        IP               Total Frames    Total Bytes    Relative Start    Duration
+------  --------------------------  -------------  --------------  -------------  ----------------  ----------
+     1  eng.lax0.atlanticmetro.net  208.78.31.118              50           4446            15.616        0.52
+     2  eng.lax0.atlanticmetro.net  208.78.31.118              10           1303            17.746        0.11
+     3  eng.lax0.atlanticmetro.net  208.78.31.118              10           1303            17.747        0.11
+     4  eng.lax0.atlanticmetro.net  208.78.31.118               9           1237            17.747        0.12
+     5  eng.lax0.atlanticmetro.net  208.78.31.118               7           1073            17.746        0.12
+     6  N\A                         17.249.28.18                4            418             5.456        0
+     6  N\A                         72.21.92.82                 3            162            12.88         0
+
+---------------  -------------------
+Click Element:   ONLY
+Test PCAP        speedtestONLY2.pcap
+Click PCAP       Unshaped
+Size Click PCAP  37877
+Details:         29TCP Connections
+Total Packets:   360221
+---------------  -------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                                 IP                Total Frames    Total Bytes    Relative Start    Duration
+------  -----------------------------------  --------------  --------------  -------------  ----------------  ----------
+     1  eng.lax0.atlanticmetro.net           208.78.31.118            27321       31711789             0.878       14.29
+     2  eng.lax0.atlanticmetro.net           208.78.31.118            20205       21687776             0.011       15.7
+     3  eng.lax0.atlanticmetro.net           208.78.31.118            17804       19928899             1.377       13.81
+     4  eng.lax0.atlanticmetro.net           208.78.31.118            17801       17945139            16.134       15.99
+     5  eng.lax0.atlanticmetro.net           208.78.31.118            17582       17794881            16.136       16.02
+     6  eng.lax0.atlanticmetro.net           208.78.31.118            16815       16971319            16.132       16.02
+     7  eng.lax0.atlanticmetro.net           208.78.31.118            16609       18148745             0.879       14.83
+     8  eng.lax0.atlanticmetro.net           208.78.31.118            16113       16175199            17.639       14.49
+     9  eng.lax0.atlanticmetro.net           208.78.31.118            15943       16028111            17.637       14.49
+    10  eng.lax0.atlanticmetro.net           208.78.31.118            15862       16068781            16.135       15.99
+    11  eng.lax0.atlanticmetro.net           208.78.31.118            15762       15884665            17.64        14.49
+    12  eng.lax0.atlanticmetro.net           208.78.31.118            15542       15731345            17.635       14.52
+    13  eng.lax0.atlanticmetro.net           208.78.31.118            15433       15594111            17.634       14.52
+    14  eng.lax0.atlanticmetro.net           208.78.31.118            14364       14490537            17.638       14.49
+    15  eng.lax0.atlanticmetro.net           208.78.31.118            13105       13503446             0.011       17.18
+    16  eng.lax0.atlanticmetro.net           208.78.31.118            13048       13253471             0           17.2
+    17  eng.lax0.atlanticmetro.net           208.78.31.118            12951       13262721             0.879       16.55
+    18  eng.lax0.atlanticmetro.net           208.78.31.118            11694       11877552             0           15.57
+    19  eng.lax0.atlanticmetro.net           208.78.31.118            11664       11824045             0.878       14.53
+    20  eng.lax0.atlanticmetro.net           208.78.31.118            11468       11389511             0.879       14.56
+    21  eng.lax0.atlanticmetro.net           208.78.31.118            10629       10729847            22.638        9.49
+    22  eng.lax0.atlanticmetro.net           208.78.31.118            10594       11263060             5.885        9.3
+    23  eng.lax0.atlanticmetro.net           208.78.31.118            10423        9517429             0.878       14.46
+    24  eng.lax0.atlanticmetro.net           208.78.31.118             6093        5879810             3.884       11.99
+    25  eng.lax0.atlanticmetro.net           208.78.31.118             5309        5106966             4.885       10.31
+    26  N\A                                  17.248.129.200              26          10519             8.256        0.51
+    26  N\A                                  72.21.92.82                  9           2520            32.099        0.23
+    26  N\A                                  151.101.1.69                 6            449            27.223        0.1
+    26  msnbot-65-52-108-183.search.msn.com  65.52.108.183                5            548             0.838        0.21
+
+

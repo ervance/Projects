@@ -1,0 +1,217 @@
+---------------  ------------------
+Click Element:   MIX
+Test PCAP        speedtestMIX4.pcap
+Click PCAP       Raw
+Size Click PCAP  274071143
+Details:         89TCP Connections
+Total Packets:   244233
+---------------  ------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                                               IP                 Total Frames    Total Bytes    Relative Start    Duration
+------  -------------------------------------------------  ---------------  --------------  -------------  ----------------  ----------
+     1  lsanca-speedtest-02.socal.rr.com                   142.129.0.67              27166       27845300            25.048       17.22
+     2  lsanca-speedtest-01.socal.rr.com                   142.129.0.65              25990       28478937            25.149       17.1
+     3  lsanca-speedtest-02.socal.rr.com                   142.129.0.67              23096       23122241            25.049       17.22
+     4  lsanca-speedtest-02.socal.rr.com                   142.129.0.67              18409       19128219            25.049       17.2
+     5  lsanca-speedtest-01.socal.rr.com                   142.129.0.65              15304       18678057            43.585       16.69
+     6  lsanca-speedtest-02.socal.rr.com                   142.129.0.67              13759       12774909            29.219       13.04
+     7  lsanca-speedtest-02.socal.rr.com                   142.129.0.67              13522       16385063            45.843       14.43
+     8  lsanca-speedtest-02.socal.rr.com                   142.129.0.67              12896       12022669            29.22        13.04
+     9  lsanca-speedtest-02.socal.rr.com                   142.129.0.67              12802       15557349            45.844       14.43
+    10  lsanca-speedtest-02.socal.rr.com                   142.129.0.67              12359       14977759            43.347       16.85
+    11  lsanca-speedtest-02.socal.rr.com                   142.129.0.67              11681       14174603            46.846       13.35
+    12  lsanca-speedtest-02.socal.rr.com                   142.129.0.67              10498       12666979            46.845       13.43
+    13  lsanca-speedtest-02.socal.rr.com                   142.129.0.67               9543       11407155            43.348       16.85
+    14  lsanca-speedtest-02.socal.rr.com                   142.129.0.67               8769       10601231            49.349       10.85
+    15  lsanca-speedtest-02.socal.rr.com                   142.129.0.67               8001        9647223            49.35        10.95
+    16  lsanca-speedtest-01.socal.rr.com                   142.129.0.65               6762        8223869            43.586       16.69
+    17  lsanca-speedtest-02.socal.rr.com                   142.129.0.67               6056        7301213            50.853        9.42
+    18  lsanca-speedtest-02.socal.rr.com                   142.129.0.67               5556        6616573            51.855        8.34
+    19  lax28s10-in-f14.1e100.net                          172.217.5.206               180         100572            22.048        0.43
+    20  lax02s22-in-f36.1e100.net                          216.58.216.36               157         102587            16.578        0.58
+    21  N\A                                                72.21.92.82                  63          42976            14.252       46.1
+    21  N\A                                                192.30.255.113               56          30377            24.676       10.37
+    21  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 50           4430            22.358        0.51
+    22  ec2-54-186-218-72.us-west-2.compute.amazonaws.com  54.186.218.72                49          30471            28.718        0.97
+    23  N\A                                                151.101.1.140                47          31140            20.594        0.56
+    23  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 39           2846            43.344        1.76
+    24  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 35           2534            43.346        1.76
+    25  N\A                                                17.248.129.177               30          11275             6.175        0.69
+    25  api-lax.smoot.apple.com                            17.249.25.246                30           3251            13.386       31.71
+    26  eng.lax0.atlanticmetro.net                         208.78.31.118                29           2745            15.51         0.5
+    27  N\A                                                203.208.199.21               29           2734            15.521        3.1
+    27  64-201-106-38.race.com                             64.201.106.38                29           2733            15.707        0.31
+    28  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 29           2729            15.736        0.28
+    29  speedtest.lax2.hostduplex.com                      162.254.119.11               29           2736            15.737        0.28
+    30  N\A                                                17.248.129.177               28          10477            15.412        0.43
+    30  N\A                                                192.30.255.117               28           7429            25.691       10.36
+    30  N\A                                                17.248.129.177               27          10260            16.389        0.1
+    30  N\A                                                17.248.129.147               27          11183            48.281        0.43
+    30  N\A                                                17.248.129.177               26           9437            13.625        0.11
+    30  N\A                                                17.248.129.177               25           9606            14.401        0.21
+    30  ec2-54-186-218-72.us-west-2.compute.amazonaws.com  54.186.218.72                25          10798            29.284        0.41
+    31  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                 24           1648            43.587        1.5
+    32  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                 24           1648            43.589        1.5
+    33  N\A                                                192.30.255.113               20           2862            25.511       10.23
+    33  ec2-52-71-213-54.compute-1.amazonaws.com           52.71.213.54                 19           3779            14.516        6.77
+    34  ec2-52-71-213-54.compute-1.amazonaws.com           52.71.213.54                 19           3767            14.692        6.6
+    35  ec2-52-71-213-54.compute-1.amazonaws.com           52.71.213.54                 18           2269            14.692       30.6
+    36  ec2-52-71-213-54.compute-1.amazonaws.com           52.71.213.54                 18           2314            14.692       30.6
+    37  N\A                                                72.21.92.82                  18           7779            14.758       30.43
+    37  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                 18           1236            46.947        0.66
+    38  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 16           2100            31.921       10.34
+    39  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 16           2100            31.922       10.33
+    40  ec2-54-186-218-72.us-west-2.compute.amazonaws.com  54.186.218.72                15           4189            29.573        0.58
+    41  ec2-54-186-218-72.us-west-2.compute.amazonaws.com  54.186.218.72                15           4236            29.574        0.29
+    42  ec2-54-186-218-72.us-west-2.compute.amazonaws.com  54.186.218.72                15           4203            29.575        0.4
+    43  ec2-54-186-218-72.us-west-2.compute.amazonaws.com  54.186.218.72                14           4395            29.573        0.41
+    44  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 14           1529            31.921       10.33
+    45  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 14           1529            31.921       10.33
+    46  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 14           1529            31.922       10.34
+    47  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 14           1529            31.922       10.33
+    48  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 14           1529            31.922       10.34
+    49  ec2-52-7-136-125.compute-1.amazonaws.com           52.7.136.125                 13           3262            25.367        0.25
+    50  lax28s15-in-f14.1e100.net                          172.217.11.174               12           2286            23.998        0.08
+    51  lax17s15-in-f78.1e100.net                          172.217.5.78                 12           1430            25.334        0.08
+    52  N\A                                                72.21.81.253                 11           1691            14.874       30.31
+    52  N\A                                                151.101.1.140                11           3382            21.203        0.19
+    52  msnbot-65-52-108-183.search.msn.com                65.52.108.183                10           1096            13.731       45.29
+    53  lax17s34-in-f6.1e100.net                           172.217.11.70                10           1726            14.547       30.64
+    54  N\A                                                151.101.1.140                 7            515            25.168        0.13
+    54  N\A                                                151.101.193.140               7            515            25.168        0.13
+    54  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                  6            416            25.048        0.26
+    55  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                  6            416            25.15         0.16
+    56  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                  6            416            25.15         0.16
+    57  N\A                                                151.101.1.140                 6            449            25.168        0.13
+    57  N\A                                                151.101.1.140                 6            449            25.168        0.13
+    57  N\A                                                151.101.1.140                 6            449            25.168        0.13
+    57  lax28s10-in-f14.1e100.net                          172.217.5.206                 5            376            25.168        0.13
+    58  N\A                                                17.249.28.18                  4            546            13.355        0.02
+    58  N\A                                                151.101.1.140                 4            670            21.552        0.85
+    58  lax28s10-in-f1.1e100.net                           172.217.5.193                 3            198             5.324        0.02
+    59  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                  3            206            25.149        0.15
+    60  ec2-50-112-169-77.us-west-2.compute.amazonaws.com  50.112.169.77                 3            206            29.749        0.03
+    61  ec2-50-112-169-77.us-west-2.compute.amazonaws.com  50.112.169.77                 3            206            29.749        0.1
+    62  ec2-50-112-169-77.us-west-2.compute.amazonaws.com  50.112.169.77                 3            206            29.752        0.15
+    63  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                  3            206            32.023        0.21
+    64  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                  3            206            32.023        0.21
+    65  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                  3            206            32.023        0.21
+    66  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                  3            206            32.023        0.21
+    67  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                  3            206            32.024        0.21
+
+---------------  ------------------
+Click Element:   MIX
+Test PCAP        speedtestMIX4.pcap
+Click PCAP       Shaped
+Size Click PCAP  274071143
+Details:         89TCP Connections
+Total Packets:   244233
+---------------  ------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                                               IP                 Total Frames    Total Bytes    Relative Start    Duration
+------  -------------------------------------------------  ---------------  --------------  -------------  ----------------  ----------
+     1  lsanca-speedtest-02.socal.rr.com                   142.129.0.67              27166       27845300            25.048       17.22
+     2  lsanca-speedtest-01.socal.rr.com                   142.129.0.65              25990       28478937            25.149       17.1
+     3  lsanca-speedtest-02.socal.rr.com                   142.129.0.67              23096       23122241            25.049       17.22
+     4  lsanca-speedtest-02.socal.rr.com                   142.129.0.67              18409       19128219            25.049       17.2
+     5  lsanca-speedtest-01.socal.rr.com                   142.129.0.65              15304       18678057            43.585       16.69
+     6  lsanca-speedtest-02.socal.rr.com                   142.129.0.67              13759       12774909            29.219       13.04
+     7  lsanca-speedtest-02.socal.rr.com                   142.129.0.67              13522       16385063            45.843       14.43
+     8  lsanca-speedtest-02.socal.rr.com                   142.129.0.67              12896       12022669            29.22        13.04
+     9  lsanca-speedtest-02.socal.rr.com                   142.129.0.67              12802       15557349            45.844       14.43
+    10  lsanca-speedtest-02.socal.rr.com                   142.129.0.67              12359       14977759            43.347       16.85
+    11  lsanca-speedtest-02.socal.rr.com                   142.129.0.67              11681       14174603            46.846       13.35
+    12  lsanca-speedtest-02.socal.rr.com                   142.129.0.67              10498       12666979            46.845       13.43
+    13  lsanca-speedtest-02.socal.rr.com                   142.129.0.67               9543       11407155            43.348       16.85
+    14  lsanca-speedtest-02.socal.rr.com                   142.129.0.67               8769       10601231            49.349       10.85
+    15  lsanca-speedtest-02.socal.rr.com                   142.129.0.67               8001        9647223            49.35        10.95
+    16  lsanca-speedtest-01.socal.rr.com                   142.129.0.65               6762        8223869            43.586       16.69
+    17  lsanca-speedtest-02.socal.rr.com                   142.129.0.67               6056        7301213            50.853        9.42
+    18  lsanca-speedtest-02.socal.rr.com                   142.129.0.67               5556        6616573            51.855        8.34
+    19  lax28s10-in-f14.1e100.net                          172.217.5.206               180         100572            22.048        0.43
+    20  lax02s22-in-f36.1e100.net                          216.58.216.36               157         102587            16.578        0.58
+    21  N\A                                                72.21.92.82                  63          42976            14.252       46.1
+    21  N\A                                                192.30.255.113               56          30377            24.676       10.37
+    21  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 50           4430            22.358        0.51
+    22  ec2-54-186-218-72.us-west-2.compute.amazonaws.com  54.186.218.72                49          30471            28.718        0.97
+    23  N\A                                                151.101.1.140                47          31140            20.594        0.56
+    23  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 39           2846            43.344        1.76
+    24  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 35           2534            43.346        1.76
+    25  N\A                                                17.248.129.177               30          11275             6.175        0.69
+    25  api-lax.smoot.apple.com                            17.249.25.246                30           3251            13.386       31.71
+    26  eng.lax0.atlanticmetro.net                         208.78.31.118                29           2745            15.51         0.5
+    27  N\A                                                203.208.199.21               29           2734            15.521        3.1
+    27  64-201-106-38.race.com                             64.201.106.38                29           2733            15.707        0.31
+    28  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 29           2729            15.736        0.28
+    29  speedtest.lax2.hostduplex.com                      162.254.119.11               29           2736            15.737        0.28
+    30  N\A                                                17.248.129.177               28          10477            15.412        0.43
+    30  N\A                                                192.30.255.117               28           7429            25.691       10.36
+    30  N\A                                                17.248.129.177               27          10260            16.389        0.1
+    30  N\A                                                17.248.129.147               27          11183            48.281        0.43
+    30  N\A                                                17.248.129.177               26           9437            13.625        0.11
+    30  N\A                                                17.248.129.177               25           9606            14.401        0.21
+    30  ec2-54-186-218-72.us-west-2.compute.amazonaws.com  54.186.218.72                25          10798            29.284        0.41
+    31  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                 24           1648            43.587        1.5
+    32  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                 24           1648            43.589        1.5
+    33  N\A                                                192.30.255.113               20           2862            25.511       10.23
+    33  ec2-52-71-213-54.compute-1.amazonaws.com           52.71.213.54                 19           3779            14.516        6.77
+    34  ec2-52-71-213-54.compute-1.amazonaws.com           52.71.213.54                 19           3767            14.692        6.6
+    35  ec2-52-71-213-54.compute-1.amazonaws.com           52.71.213.54                 18           2269            14.692       30.6
+    36  ec2-52-71-213-54.compute-1.amazonaws.com           52.71.213.54                 18           2314            14.692       30.6
+    37  N\A                                                72.21.92.82                  18           7779            14.758       30.43
+    37  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                 18           1236            46.947        0.66
+    38  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 16           2100            31.921       10.34
+    39  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 16           2100            31.922       10.33
+    40  ec2-54-186-218-72.us-west-2.compute.amazonaws.com  54.186.218.72                15           4189            29.573        0.58
+    41  ec2-54-186-218-72.us-west-2.compute.amazonaws.com  54.186.218.72                15           4236            29.574        0.29
+    42  ec2-54-186-218-72.us-west-2.compute.amazonaws.com  54.186.218.72                15           4203            29.575        0.4
+    43  ec2-54-186-218-72.us-west-2.compute.amazonaws.com  54.186.218.72                14           4395            29.573        0.41
+    44  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 14           1529            31.921       10.33
+    45  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 14           1529            31.921       10.33
+    46  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 14           1529            31.922       10.34
+    47  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 14           1529            31.922       10.33
+    48  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                 14           1529            31.922       10.34
+    49  ec2-52-7-136-125.compute-1.amazonaws.com           52.7.136.125                 13           3262            25.367        0.25
+    50  lax28s15-in-f14.1e100.net                          172.217.11.174               12           2286            23.998        0.08
+    51  lax17s15-in-f78.1e100.net                          172.217.5.78                 12           1430            25.334        0.08
+    52  N\A                                                72.21.81.253                 11           1691            14.874       30.31
+    52  N\A                                                151.101.1.140                11           3382            21.203        0.19
+    52  msnbot-65-52-108-183.search.msn.com                65.52.108.183                10           1096            13.731       45.29
+    53  lax17s34-in-f6.1e100.net                           172.217.11.70                10           1726            14.547       30.64
+    54  N\A                                                151.101.1.140                 7            515            25.168        0.13
+    54  N\A                                                151.101.193.140               7            515            25.168        0.13
+    54  lsanca-speedtest-02.socal.rr.com                   142.129.0.67                  6            416            25.048        0.26
+    55  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                  6            416            25.15         0.16
+    56  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                  6            416            25.15         0.16
+    57  N\A                                                151.101.1.140                 6            449            25.168        0.13
+    57  N\A                                                151.101.1.140                 6            449            25.168        0.13
+    57  N\A                                                151.101.1.140                 6            449            25.168        0.13
+    57  lax28s10-in-f14.1e100.net                          172.217.5.206                 5            376            25.168        0.13
+    58  N\A                                                17.249.28.18                  4            546            13.355        0.02
+    58  N\A                                                151.101.1.140                 4            670            21.552        0.85
+    58  lax28s10-in-f1.1e100.net                           172.217.5.193                 3            198             5.324        0.02
+    59  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                  3            206            25.149        0.15
+    60  ec2-50-112-169-77.us-west-2.compute.amazonaws.com  50.112.169.77                 3            206            29.749        0.03
+    61  ec2-50-112-169-77.us-west-2.compute.amazonaws.com  50.112.169.77                 3            206            29.749        0.1
+    62  ec2-50-112-169-77.us-west-2.compute.amazonaws.com  50.112.169.77                 3            206            29.752        0.15
+    63  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                  3            206            32.023        0.21
+    64  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                  3            206            32.023        0.21
+    65  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                  3            206            32.023        0.21
+    66  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                  3            206            32.023        0.21
+    67  lsanca-speedtest-01.socal.rr.com                   142.129.0.65                  3            206            32.024        0.21
+
+---------------  ------------------
+Click Element:   MIX
+Test PCAP        speedtestMIX4.pcap
+Click PCAP       Unshaped
+Size Click PCAP  274071143
+Details:         0TCP Connections
+Total Packets:   0
+---------------  ------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+No Shaped Files
+
+

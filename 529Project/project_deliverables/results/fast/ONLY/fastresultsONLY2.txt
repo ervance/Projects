@@ -1,0 +1,55 @@
+---------------  ----------------
+Click Element:   ONLY
+Test PCAP        fastONLY2.pcap
+Click PCAP       Raw
+Size Click PCAP  82963537
+Details:         8TCP Connections
+Total Packets:   69371
+---------------  ----------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                                               IP                Total Frames    Total Bytes    Relative Start    Duration
+------  -------------------------------------------------  --------------  --------------  -------------  ----------------  ----------
+     1  ipv4_1.cxl0.c190.lax001.ix.nflxvideo.net           23.246.15.169            39212       46786708             8.196        7.28
+     2  ipv4_1.lagg0.c071.lax001.ix.nflxvideo.net          108.175.47.155           16176       18683499             9.206        6.26
+     3  ipv4_1.cxl0.c175.lax001.ix.nflxvideo.net           23.246.14.169            13925       16301760             8.524        6.95
+     4  ec2-52-89-160-190.us-west-2.compute.amazonaws.com  52.89.160.190               43          40713            15.46         0.11
+     5  ipv4_1.lagg0.c057.lax001.ix.nflxvideo.net          108.175.46.102               4           1700             0.341        0
+     6  do-7.lastpass.com                                  192.241.182.7                4            330             2.886        0.08
+     7  ipv4_1.cxl0.c444.ord001.ix.nflxvideo.net           198.38.109.233               4           1700             4.048        0
+     8  ec2-52-43-64-149.us-west-2.compute.amazonaws.com   52.43.64.149                 3           2023             8.09         0.07
+
+---------------  ----------------
+Click Element:   ONLY
+Test PCAP        fastONLY2.pcap
+Click PCAP       Shaped
+Size Click PCAP  82963537
+Details:         8TCP Connections
+Total Packets:   69371
+---------------  ----------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                                               IP                Total Frames    Total Bytes    Relative Start    Duration
+------  -------------------------------------------------  --------------  --------------  -------------  ----------------  ----------
+     1  ipv4_1.cxl0.c190.lax001.ix.nflxvideo.net           23.246.15.169            39212       46786708             8.196        7.28
+     2  ipv4_1.lagg0.c071.lax001.ix.nflxvideo.net          108.175.47.155           16176       18683499             9.206        6.26
+     3  ipv4_1.cxl0.c175.lax001.ix.nflxvideo.net           23.246.14.169            13925       16301760             8.524        6.95
+     4  ec2-52-89-160-190.us-west-2.compute.amazonaws.com  52.89.160.190               43          40713            15.46         0.11
+     5  ipv4_1.lagg0.c057.lax001.ix.nflxvideo.net          108.175.46.102               4           1700             0.341        0
+     6  do-7.lastpass.com                                  192.241.182.7                4            330             2.886        0.08
+     7  ipv4_1.cxl0.c444.ord001.ix.nflxvideo.net           198.38.109.233               4           1700             4.048        0
+     8  ec2-52-43-64-149.us-west-2.compute.amazonaws.com   52.43.64.149                 3           2023             8.09         0.07
+
+---------------  ----------------
+Click Element:   ONLY
+Test PCAP        fastONLY2.pcap
+Click PCAP       Unshaped
+Size Click PCAP  82963537
+Details:         0TCP Connections
+Total Packets:   0
+---------------  ----------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+No Shaped Files
+
+

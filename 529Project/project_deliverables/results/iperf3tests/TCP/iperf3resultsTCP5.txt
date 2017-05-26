@@ -1,0 +1,45 @@
+---------------  -------------------
+Click Element:   TCP
+Test PCAP        iperf3testTCP5.pcap
+Click PCAP       Raw
+Size Click PCAP  4862
+Details:         2TCP Connections
+Total Packets:   3221595
+---------------  -------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                       IP               Total Frames    Total Bytes    Relative Start    Duration
+------  -------------------------  -------------  --------------  -------------  ----------------  ----------
+     1  ubuntubox.frontiernet.net  192.168.1.115         3221578     4807244777             6.038        9.91
+     2  ubuntubox.frontiernet.net  192.168.1.115              17           1269             5.995        0.04
+
+---------------  -------------------
+Click Element:   TCP
+Test PCAP        iperf3testTCP5.pcap
+Click PCAP       Shaped
+Size Click PCAP  4862
+Details:         1TCP Connections
+Total Packets:   8
+---------------  -------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                       IP               Total Frames    Total Bytes    Relative Start    Duration
+------  -------------------------  -------------  --------------  -------------  ----------------  ----------
+     1  ubuntubox.frontiernet.net  192.168.1.115               8            590             5.995           0
+
+---------------  -------------------
+Click Element:   TCP
+Test PCAP        iperf3testTCP5.pcap
+Click PCAP       Unshaped
+Size Click PCAP  4862
+Details:         2TCP Connections
+Total Packets:   3221587
+---------------  -------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                       IP               Total Frames    Total Bytes    Relative Start    Duration
+------  -------------------------  -------------  --------------  -------------  ----------------  ----------
+     1  ubuntubox.frontiernet.net  192.168.1.115         3221578     4807244777                 0        9.91
+     2  ubuntubox.frontiernet.net  192.168.1.115               9            679                 0        0
+
+

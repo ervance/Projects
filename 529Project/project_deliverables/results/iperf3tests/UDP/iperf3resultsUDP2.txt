@@ -1,0 +1,52 @@
+---------------  -------------------
+Click Element:   UDP
+Test PCAP        iperf3testUDP2.pcap
+Click PCAP       Raw
+Size Click PCAP  28056
+Details:         6TCP Connections
+Total Packets:   925
+---------------  -------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                       IP                 Total Frames    Total Bytes    Relative Start    Duration
+------  -------------------------  ---------------  --------------  -------------  ----------------  ----------
+     1  ubuntubox.frontiernet.net  192.168.1.115               899        1336636             6.293        9.9
+     2  N\A                        224.0.144.1                   6            576             6.548        1.02
+     2  N\A                        192.168.1.255                 3            189             2.248        9.93
+     2  DD-WRT                     192.168.1.1                   2            208             1.905        0.06
+     3  N\A                        192.168.1.255                 2            126             2.249        5.01
+     3  N\A                        239.255.255.250               1            136             7.27         0
+
+---------------  -------------------
+Click Element:   UDP
+Test PCAP        iperf3testUDP2.pcap
+Click PCAP       Shaped
+Size Click PCAP  28056
+Details:         5TCP Connections
+Total Packets:   26
+---------------  -------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host    IP                 Total Frames    Total Bytes    Relative Start    Duration
+------  ------  ---------------  --------------  -------------  ----------------  ----------
+     1  N\A     224.0.144.1                   6            576             6.548        1.02
+     1  N\A     192.168.1.255                 3            189             2.248        9.93
+     1  DD-WRT  192.168.1.1                   2            208             1.905        0.06
+     2  N\A     192.168.1.255                 2            126             2.249        5.01
+     2  N\A     239.255.255.250               1            136             7.27         0
+
+---------------  -------------------
+Click Element:   UDP
+Test PCAP        iperf3testUDP2.pcap
+Click PCAP       Unshaped
+Size Click PCAP  28056
+Details:         1TCP Connections
+Total Packets:   899
+---------------  -------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                       IP               Total Frames    Total Bytes    Relative Start    Duration
+------  -------------------------  -------------  --------------  -------------  ----------------  ----------
+     1  ubuntubox.frontiernet.net  192.168.1.115             899        1336636                 0         9.9
+
+

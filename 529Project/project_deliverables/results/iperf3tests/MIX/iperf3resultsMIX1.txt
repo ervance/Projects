@@ -1,0 +1,67 @@
+---------------  -------------------
+Click Element:   MIX
+Test PCAP        iperf3testMIX1.pcap
+Click PCAP       Raw
+Size Click PCAP  167134
+Details:         13TCP Connections
+Total Packets:   3013884
+---------------  -------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                                        IP                Total Frames    Total Bytes    Relative Start    Duration
+------  ------------------------------------------  --------------  --------------  -------------  ----------------  ----------
+     1  ubuntubox.frontiernet.net                   192.168.1.115          3013187     4497571143            10.604       10
+     2  lax17s05-in-f196.1e100.net                  216.58.217.196             136          76899             6.591        0.44
+     3  ubuntubox.frontiernet.net                   192.168.1.115               33           2734            10.56        10.09
+     4  ec2-52-204-126-112.compute-1.amazonaws.com  52.204.126.112              13           2018            21.205        0.25
+     5  ec2-52-204-126-112.compute-1.amazonaws.com  52.204.126.112              13           1964            21.387        0.24
+     6  ec2-52-204-126-112.compute-1.amazonaws.com  52.204.126.112              13           1980            21.387        0.3
+     7  ec2-52-204-126-112.compute-1.amazonaws.com  52.204.126.112              13           1965            21.387        0.25
+     8  lax17s15-in-f67.1e100.net                   172.217.5.67                10            952             6.895        0.07
+     9  bn3sch020010560.wns.windows.com             131.253.34.247               5            564            16.294        0.15
+    10  ec2-52-204-126-112.compute-1.amazonaws.com  52.204.126.112               5            337            16.348        0.07
+    11  ec2-52-204-126-112.compute-1.amazonaws.com  52.204.126.112               5            337            16.348        0.07
+    12  ec2-52-204-126-112.compute-1.amazonaws.com  52.204.126.112               5            337            16.348        0.07
+    13  ec2-52-204-126-112.compute-1.amazonaws.com  52.204.126.112               5            337            16.349        0.07
+
+---------------  -------------------
+Click Element:   MIX
+Test PCAP        iperf3testMIX1.pcap
+Click PCAP       Shaped
+Size Click PCAP  167134
+Details:         12TCP Connections
+Total Packets:   672
+---------------  -------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                                        IP                Total Frames    Total Bytes    Relative Start    Duration
+------  ------------------------------------------  --------------  --------------  -------------  ----------------  ----------
+     1  lax17s05-in-f196.1e100.net                  216.58.217.196             136          76899             6.591        0.44
+     2  ec2-52-204-126-112.compute-1.amazonaws.com  52.204.126.112              13           2018            21.205        0.25
+     3  ec2-52-204-126-112.compute-1.amazonaws.com  52.204.126.112              13           1964            21.387        0.24
+     4  ec2-52-204-126-112.compute-1.amazonaws.com  52.204.126.112              13           1980            21.387        0.3
+     5  ec2-52-204-126-112.compute-1.amazonaws.com  52.204.126.112              13           1965            21.387        0.25
+     6  lax17s15-in-f67.1e100.net                   172.217.5.67                10            952             6.895        0.07
+     7  ubuntubox.frontiernet.net                   192.168.1.115                8            590            10.56         0
+     8  bn3sch020010560.wns.windows.com             131.253.34.247               5            564            16.294        0.15
+     9  ec2-52-204-126-112.compute-1.amazonaws.com  52.204.126.112               5            337            16.348        0.07
+    10  ec2-52-204-126-112.compute-1.amazonaws.com  52.204.126.112               5            337            16.348        0.07
+    11  ec2-52-204-126-112.compute-1.amazonaws.com  52.204.126.112               5            337            16.348        0.07
+    12  ec2-52-204-126-112.compute-1.amazonaws.com  52.204.126.112               5            337            16.349        0.07
+
+---------------  -------------------
+Click Element:   MIX
+Test PCAP        iperf3testMIX1.pcap
+Click PCAP       Unshaped
+Size Click PCAP  167134
+Details:         2TCP Connections
+Total Packets:   3013212
+---------------  -------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                       IP               Total Frames    Total Bytes    Relative Start    Duration
+------  -------------------------  -------------  --------------  -------------  ----------------  ----------
+     1  ubuntubox.frontiernet.net  192.168.1.115         3013187     4497571143                 0       10
+     2  ubuntubox.frontiernet.net  192.168.1.115              25           2144                 0       10.05
+
+

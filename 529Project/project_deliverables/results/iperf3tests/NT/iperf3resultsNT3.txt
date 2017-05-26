@@ -1,0 +1,63 @@
+---------------  ------------------
+Click Element:   NT
+Test PCAP        iperf3testNT3.pcap
+Click PCAP       Raw
+Size Click PCAP  233768
+Details:         12TCP Connections
+Total Packets:   539
+---------------  ------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                                                IP                Total Frames    Total Bytes    Relative Start    Duration
+------  --------------------------------------------------  --------------  --------------  -------------  ----------------  ----------
+     1  lax17s05-in-f196.1e100.net                          216.58.217.196              98          72131             7.151        0.18
+     2  ec2-54-148-48-62.us-west-2.compute.amazonaws.com    54.148.48.62                39          28332            15.117        0.81
+     3  ec2-54-149-120-35.us-west-2.compute.amazonaws.com   54.149.120.35               21           8061            15.906        0.23
+     4  a23-72-91-112.deploy.static.akamaitechnologies.com  23.72.91.112                10            698            10.564        0
+     5  ec2-54-148-48-62.us-west-2.compute.amazonaws.com    54.148.48.62                10           6164            15.788        0.14
+     6  ec2-54-148-48-62.us-west-2.compute.amazonaws.com    54.148.48.62                10           6258            15.881        0.27
+     7  ec2-54-148-48-62.us-west-2.compute.amazonaws.com    54.148.48.62                 5           3296            15.881        0.05
+     8  ec2-54-148-48-62.us-west-2.compute.amazonaws.com    54.148.48.62                 5           3024            15.882        0.06
+     9  ec2-54-165-93-73.compute-1.amazonaws.com            54.165.93.73                 3            886            23.633        0.07
+    10  ec2-54-165-93-73.compute-1.amazonaws.com            54.165.93.73                 3            888            23.634        0.07
+    11  ec2-54-165-93-73.compute-1.amazonaws.com            54.165.93.73                 3            904            23.653        0.07
+    12  ec2-54-165-93-73.compute-1.amazonaws.com            54.165.93.73                 3            889            23.654        0.07
+
+---------------  ------------------
+Click Element:   NT
+Test PCAP        iperf3testNT3.pcap
+Click PCAP       Shaped
+Size Click PCAP  233768
+Details:         12TCP Connections
+Total Packets:   539
+---------------  ------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                                                IP                Total Frames    Total Bytes    Relative Start    Duration
+------  --------------------------------------------------  --------------  --------------  -------------  ----------------  ----------
+     1  lax17s05-in-f196.1e100.net                          216.58.217.196              98          72131             7.151        0.18
+     2  ec2-54-148-48-62.us-west-2.compute.amazonaws.com    54.148.48.62                39          28332            15.117        0.81
+     3  ec2-54-149-120-35.us-west-2.compute.amazonaws.com   54.149.120.35               21           8061            15.906        0.23
+     4  a23-72-91-112.deploy.static.akamaitechnologies.com  23.72.91.112                10            698            10.564        0
+     5  ec2-54-148-48-62.us-west-2.compute.amazonaws.com    54.148.48.62                10           6164            15.788        0.14
+     6  ec2-54-148-48-62.us-west-2.compute.amazonaws.com    54.148.48.62                10           6258            15.881        0.27
+     7  ec2-54-148-48-62.us-west-2.compute.amazonaws.com    54.148.48.62                 5           3296            15.881        0.05
+     8  ec2-54-148-48-62.us-west-2.compute.amazonaws.com    54.148.48.62                 5           3024            15.882        0.06
+     9  ec2-54-165-93-73.compute-1.amazonaws.com            54.165.93.73                 3            886            23.633        0.07
+    10  ec2-54-165-93-73.compute-1.amazonaws.com            54.165.93.73                 3            888            23.634        0.07
+    11  ec2-54-165-93-73.compute-1.amazonaws.com            54.165.93.73                 3            904            23.653        0.07
+    12  ec2-54-165-93-73.compute-1.amazonaws.com            54.165.93.73                 3            889            23.654        0.07
+
+---------------  ------------------
+Click Element:   NT
+Test PCAP        iperf3testNT3.pcap
+Click PCAP       Unshaped
+Size Click PCAP  233768
+Details:         0TCP Connections
+Total Packets:   0
+---------------  ------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+No Shaped Files
+
+

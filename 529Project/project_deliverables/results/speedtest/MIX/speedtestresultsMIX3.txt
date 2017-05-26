@@ -1,0 +1,119 @@
+---------------  ------------------
+Click Element:   MIX
+Test PCAP        speedtestMIX3.pcap
+Click PCAP       Raw
+Size Click PCAP  520239
+Details:         40TCP Connections
+Total Packets:   1375
+---------------  ------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                                              IP                Total Frames    Total Bytes    Relative Start    Duration
+------  ------------------------------------------------  --------------  --------------  -------------  ----------------  ----------
+     1  lax28s10-in-f14.1e100.net                         172.217.5.206              161          98773            22.004        0.37
+     2  lax02s22-in-f36.1e100.net                         216.58.216.36              121          77725             1.474       15.59
+     3  N\A                                               192.30.255.113              58          30480            24.474       10.35
+     3  108-174-10-14.fwd.linkedin.com                    108.174.10.14               57          14535            32.376       19.89
+     4  ec2-52-89-148-95.us-west-2.compute.amazonaws.com  52.89.148.95                51          32474             5.288       55.14
+     5  eng.lax0.atlanticmetro.net                        208.78.31.118               50           4446            15.517        0.54
+     6  N\A                                               151.101.1.140               44          30905            20.423        0.57
+     6  lax28s10-in-f1.1e100.net                          172.217.5.193               44          15523            22.268        0.4
+     7  N\A                                               17.248.129.235              43          15952            32.403       19.86
+     7  ec2-52-88-123-73.us-west-2.compute.amazonaws.com  52.88.123.73                31          14787            28.754        0.5
+     8  N\A                                               192.30.255.117              28           7428            25.587       10.36
+     8  N\A                                               17.248.129.176              27          11193             8.001        0.14
+     8  ec2-52-71-213-54.compute-1.amazonaws.com          52.71.213.54                27           8131            20.883       31.29
+     9  N\A                                               17.248.129.176              27          10587            25.808        0.13
+     9  N\A                                               17.248.129.145              27          11174            47.57         0.16
+     9  N\A                                               192.30.255.113              20           2862            25.297       10.22
+     9  ec2-52-7-136-125.compute-1.amazonaws.com          52.7.136.125                19           7188            25.192        0.35
+    10  ec2-52-71-213-54.compute-1.amazonaws.com          52.71.213.54                18           2301            21.147       31.02
+    11  ec2-52-71-213-54.compute-1.amazonaws.com          52.71.213.54                18           2317            21.148       31.02
+    12  ec2-52-71-213-54.compute-1.amazonaws.com          52.71.213.54                18           2302            21.148       31.02
+    13  ec2-52-88-123-73.us-west-2.compute.amazonaws.com  52.88.123.73                15           4203            29.185        0.16
+    14  ec2-52-88-123-73.us-west-2.compute.amazonaws.com  52.88.123.73                14           4129            29.089        0.23
+    15  ec2-52-88-123-73.us-west-2.compute.amazonaws.com  52.88.123.73                14           4123            29.184        0.2
+    16  ec2-52-88-123-73.us-west-2.compute.amazonaws.com  52.88.123.73                14           4170            29.185        0.21
+    17  eng.lax0.atlanticmetro.net                        208.78.31.118               14           1545            35.062       17.24
+    18  eng.lax0.atlanticmetro.net                        208.78.31.118               14           1545            35.063       17.24
+    19  eng.lax0.atlanticmetro.net                        208.78.31.118               14           1545            35.063       17.24
+    20  eng.lax0.atlanticmetro.net                        208.78.31.118               14           1545            35.064       17.24
+    21  lax28s15-in-f14.1e100.net                         172.217.11.174              12           2340            22.256        0.08
+    22  lax17s15-in-f78.1e100.net                         172.217.5.78                12           1430            25.159        0.08
+    23  N\A                                               151.101.1.140               11           3379            20.883        0.37
+    23  msnbot-65-52-108-183.search.msn.com               65.52.108.183               10           1096             0.726       45.16
+    24  ec2-52-89-148-95.us-west-2.compute.amazonaws.com  52.89.148.95                 5            337             8.888        0.04
+    25  ec2-52-89-148-95.us-west-2.compute.amazonaws.com  52.89.148.95                 5            337             8.889        0.04
+    26  ec2-52-89-148-95.us-west-2.compute.amazonaws.com  52.89.148.95                 5            337             8.889        0.04
+    27  ec2-52-89-148-95.us-west-2.compute.amazonaws.com  52.89.148.95                 5            337             8.889        0.03
+    28  ec2-52-89-148-95.us-west-2.compute.amazonaws.com  52.89.148.95                 5            337             8.889        0.04
+    29  do-7.lastpass.com                                 192.241.182.7                4            330             7.078        0.08
+    30  N\A                                               151.101.1.140                4            670            21.302        0.33
+    30  N\A                                               72.21.92.82                  3            162            39.832        0.02
+
+---------------  ------------------
+Click Element:   MIX
+Test PCAP        speedtestMIX3.pcap
+Click PCAP       Shaped
+Size Click PCAP  520239
+Details:         40TCP Connections
+Total Packets:   1375
+---------------  ------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+   No.  Host                                              IP                Total Frames    Total Bytes    Relative Start    Duration
+------  ------------------------------------------------  --------------  --------------  -------------  ----------------  ----------
+     1  lax28s10-in-f14.1e100.net                         172.217.5.206              161          98773            22.004        0.37
+     2  lax02s22-in-f36.1e100.net                         216.58.216.36              121          77725             1.474       15.59
+     3  N\A                                               192.30.255.113              58          30480            24.474       10.35
+     3  108-174-10-14.fwd.linkedin.com                    108.174.10.14               57          14535            32.376       19.89
+     4  ec2-52-89-148-95.us-west-2.compute.amazonaws.com  52.89.148.95                51          32474             5.288       55.14
+     5  eng.lax0.atlanticmetro.net                        208.78.31.118               50           4446            15.517        0.54
+     6  N\A                                               151.101.1.140               44          30905            20.423        0.57
+     6  lax28s10-in-f1.1e100.net                          172.217.5.193               44          15523            22.268        0.4
+     7  N\A                                               17.248.129.235              43          15952            32.403       19.86
+     7  ec2-52-88-123-73.us-west-2.compute.amazonaws.com  52.88.123.73                31          14787            28.754        0.5
+     8  N\A                                               192.30.255.117              28           7428            25.587       10.36
+     8  N\A                                               17.248.129.176              27          11193             8.001        0.14
+     8  ec2-52-71-213-54.compute-1.amazonaws.com          52.71.213.54                27           8131            20.883       31.29
+     9  N\A                                               17.248.129.176              27          10587            25.808        0.13
+     9  N\A                                               17.248.129.145              27          11174            47.57         0.16
+     9  N\A                                               192.30.255.113              20           2862            25.297       10.22
+     9  ec2-52-7-136-125.compute-1.amazonaws.com          52.7.136.125                19           7188            25.192        0.35
+    10  ec2-52-71-213-54.compute-1.amazonaws.com          52.71.213.54                18           2301            21.147       31.02
+    11  ec2-52-71-213-54.compute-1.amazonaws.com          52.71.213.54                18           2317            21.148       31.02
+    12  ec2-52-71-213-54.compute-1.amazonaws.com          52.71.213.54                18           2302            21.148       31.02
+    13  ec2-52-88-123-73.us-west-2.compute.amazonaws.com  52.88.123.73                15           4203            29.185        0.16
+    14  ec2-52-88-123-73.us-west-2.compute.amazonaws.com  52.88.123.73                14           4129            29.089        0.23
+    15  ec2-52-88-123-73.us-west-2.compute.amazonaws.com  52.88.123.73                14           4123            29.184        0.2
+    16  ec2-52-88-123-73.us-west-2.compute.amazonaws.com  52.88.123.73                14           4170            29.185        0.21
+    17  eng.lax0.atlanticmetro.net                        208.78.31.118               14           1545            35.062       17.24
+    18  eng.lax0.atlanticmetro.net                        208.78.31.118               14           1545            35.063       17.24
+    19  eng.lax0.atlanticmetro.net                        208.78.31.118               14           1545            35.063       17.24
+    20  eng.lax0.atlanticmetro.net                        208.78.31.118               14           1545            35.064       17.24
+    21  lax28s15-in-f14.1e100.net                         172.217.11.174              12           2340            22.256        0.08
+    22  lax17s15-in-f78.1e100.net                         172.217.5.78                12           1430            25.159        0.08
+    23  N\A                                               151.101.1.140               11           3379            20.883        0.37
+    23  msnbot-65-52-108-183.search.msn.com               65.52.108.183               10           1096             0.726       45.16
+    24  ec2-52-89-148-95.us-west-2.compute.amazonaws.com  52.89.148.95                 5            337             8.888        0.04
+    25  ec2-52-89-148-95.us-west-2.compute.amazonaws.com  52.89.148.95                 5            337             8.889        0.04
+    26  ec2-52-89-148-95.us-west-2.compute.amazonaws.com  52.89.148.95                 5            337             8.889        0.04
+    27  ec2-52-89-148-95.us-west-2.compute.amazonaws.com  52.89.148.95                 5            337             8.889        0.03
+    28  ec2-52-89-148-95.us-west-2.compute.amazonaws.com  52.89.148.95                 5            337             8.889        0.04
+    29  do-7.lastpass.com                                 192.241.182.7                4            330             7.078        0.08
+    30  N\A                                               151.101.1.140                4            670            21.302        0.33
+    30  N\A                                               72.21.92.82                  3            162            39.832        0.02
+
+---------------  ------------------
+Click Element:   MIX
+Test PCAP        speedtestMIX3.pcap
+Click PCAP       Unshaped
+Size Click PCAP  520239
+Details:         0TCP Connections
+Total Packets:   0
+---------------  ------------------
+
+**Note: If TCP Dst IP DNS did not resolve it was not added in this table***
+No Shaped Files
+
+
