@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sensor_main_relative"
+    android:layout_marginBottom="100dp"
+    android:background="@color/cyan"
+    >
+
+
+    <TextView
+        android:id="@+id/sensor_select_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sensor_select_title"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:background="@color/cyan"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sensor_list_view"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sensor_select_title"
+        android:background="@color/cyan"
+        />
+
+</RelativeLayout>

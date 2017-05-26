@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ShowMyLocation</string>
+    <string name="longitude">Longitude: </string>
+    <string name="latitude">Latitude: </string>
+    <string name="location">Current Location: </string>
+    <string name="title">Your Location Details</string>
+    <string name="pressure">Temperature (celsius): </string>
+    <string name="altitude">Altitude: </string>
+</resources>

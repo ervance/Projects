@@ -1,0 +1,22 @@
+Project 2: Base64 encoding
+Take a file of strings (Which may be binary data) and convert those string to a Base64 encoding.
+
+The encoding scheme to use is the same as that used in rfc1421.
+
+Base64 encoding is a process by which three binary characters are encoded and replaced with 4 text characters. Text characters include A-Z, a-z, 0-9,+,/ (these are all easily printable characters and don't pose any problems to communication software, such as email.)  We also use the '=' to represent "padded" characters.
+
+So... Three characters is three bytes, three bytes is 24 bits. But you are going to divide these 24 bits into 4 sets of 6 bits. 2^6 = 64, hence base "64" encoding.
+
+The subsequence "ABC" in a string would have the ASCII values 65 (01000001), 66 (01000010), and 67 (01000011) for a total 24 bit sequence of 010000010100001001000011. Chunking this into 6-bits chunks yields... 010000 010100 001001 000011. As 4 numbers this is 16, 20, 9, and 3. in RFC1421 this equates to the replacement sequence "QUJD"
+
+If the number of letters in a string is not divisible for 3 pad it with = signs.
+
+So take a file of multiple strings, Encode each line in RFC1421 Base64 encoding and output that line to a new file.
+
+THe input file is called "input.txt" the output file shall be named "output64.txt"
+
+Each input line will be less than 1024 characters
+
+Each line may include binary data but will not include carriage return ('\r') or newline ('\n').
+
+Each line will be terminated by the two character end of line sequence ("\r\n")

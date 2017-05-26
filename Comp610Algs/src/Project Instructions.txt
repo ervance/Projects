@@ -1,0 +1,20 @@
+Author Eric Vance
+Comp 610
+Max2Stat Project
+
+Instructions:
+
+1. compile using javac
+	javac *.java 
+2. run Driver 
+	java Driver
+3. The program will ask for the input test file give it the
+	<path to test file> and press enter
+4. The program will run and display the results
+5. Results will also be written to a file results.txt once you
+	end the program by typing in 0 and pressing enter
+6. You will be prompted if you would like to run another test. If
+	you want to run another test on a different file you type 1 and hit enter.  If you want to stop testing and close / save the results.txt file you type 0 and hit enter.
+7. As many tests files as you would like to enter can be run, but to save the results.txt file you must exit the program by typing in 0 once it is finished.
+
+8. results.txt will be saved to your current directory

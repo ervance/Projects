@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SensorWatch</string>
+    <string name="axis_data_label">Data</string>
+    <string name="x_axis">X</string>
+    <string name="y_axis">Y</string>
+    <string name="z_axis">Z</string>
+    <string name="min_max_label">Min/Max Values</string>
+    <string name="x_min_max">X</string>
+    <string name="y_min_max">Y</string>
+    <string name="z_min_max">Z</string>
+    <string name="other_data_label">Other Sensor Data</string>
+    <string name="sensor_select_title">Available Sensors</string>
+    <string name="sensor_unavailable">Sensor Unavailable</string>
+</resources>

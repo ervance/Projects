@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sensor_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.evance.sensorwatch.SensorDataActivity"
+    android:background="@color/cyan">
+
+
+    <TextView
+        android:id="@+id/sensor_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:paddingBottom="30dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/unavailable_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/red"
+        android:text="@string/sensor_unavailable"
+        android:layout_below="@+id/sensor_label"
+        />
+    <RelativeLayout
+        android:id="@+id/raw_data"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/sensor_label"
+        android:paddingBottom="25dp"
+        >
+
+        <TextView
+            android:id="@+id/axis_data_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/axis_data_label"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/amber"
+            />
+
+        <TextView
+            android:id="@+id/x_label"
+            android:text="@string/x_axis"
+            android:textStyle="bold"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/axis_data_label"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/y_label"
+            android:text="@string/y_axis"
+            android:textStyle="bold"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_below="@+id/x_label"
+            android:paddingTop="10dp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/z_label"
+            android:text="@string/z_axis"
+            android:textStyle="bold"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_below="@+id/y_label"
+            android:paddingTop="10dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/x_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/x_label"
+            android:layout_below="@+id/axis_data_label"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/y_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/x_data"
+            android:layout_toRightOf="@+id/y_label"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/z_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/z_label"
+            android:layout_below="@+id/y_data"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+<!--**********************************************************************-->
+
+    <RelativeLayout
+        android:id="@+id/min_max_data_label"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sensor_label"
+        android:layout_toRightOf="@+id/raw_data"
+        android:paddingBottom="25dp"
+        >
+
+        <TextView
+            android:id="@+id/min_max_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/min_max_label"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/amber"
+            />
+
+        <TextView
+            android:id="@+id/x_min_max_label"
+            android:text="@string/x_min_max"
+            android:textStyle="bold"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/min_max_label"
+            android:layout_alignTop="@+id/x_min_max_data"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/y_min_max_label"
+            android:text="@string/y_min_max"
+            android:textStyle="bold"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_below="@+id/x_min_max_data"
+            android:layout_alignTop="@+id/y_min_max_data"
+            android:paddingTop="10dp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/z_min_max_label"
+            android:text="@string/z_min_max"
+            android:textStyle="bold"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_below="@+id/y_min_max_data"
+            android:layout_alignTop="@+id/z_min_max_data"
+            android:paddingTop="10dp"
+            android:textColor="@color/white"
+            />
+
+        <!--X DATA-->
+        <TextView
+            android:id="@+id/x_min_max_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/min_max_label"
+            android:layout_toRightOf="@+id/x_min_max_label"
+            android:paddingTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            />
+        <!--Y DATA-->
+        <TextView
+            android:id="@+id/y_min_max_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/x_min_max_data"
+            android:layout_toRightOf="@+id/y_min_max_label"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:textColor="@color/white"
+            />
+        <!--Z DATA-->
+        <TextView
+            android:id="@+id/z_min_max_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/y_min_max_data"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/z_min_max_label"
+            android:paddingTop="10dp"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+
+
+    <!--**********************************************************************-->
+    <RelativeLayout
+        android:id="@+id/other_raw_data_label_container"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/min_max_data_label"
+
+        >
+
+        <TextView
+            android:id="@+id/other_raw_data_label"
+            android:text="@string/other_data_label"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/amber"
+            />
+
+        <TextView
+            android:id="@+id/other_raw_data"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/other_raw_data_label"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/other_min_max_label"
+            android:text="@string/min_max_label"
+            android:textStyle="bold"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/other_raw_data_label"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/amber"
+            />
+
+        <TextView
+            android:id="@+id/other_min_max_data"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/other_min_max_label"
+            android:layout_toRightOf="@+id/other_raw_data"
+            android:textAlignment="center"
+            />
+
+    </RelativeLayout>
+
+
+    <!--**********************************************************************-->
+
+
+
+
+</RelativeLayout>

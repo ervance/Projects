@@ -1,0 +1,8 @@
+/*Finite state machine*/
+
+fsm(0,[a|T] :- fsm(0,T).
+
+
+
+
+

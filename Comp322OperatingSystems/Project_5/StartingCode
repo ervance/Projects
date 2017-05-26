@@ -1,0 +1,102 @@
+/*
+	Start code for Programming Project 4.
+	Create 4 files with proper file extension.
+*/
+
+
+// File 1, pid.h
+// This header file is included in pid.c and test.c
+
+#include <pthread.h>
+
+#define PID_MIN  	300
+#define PID_MAX 	350
+
+/* mutex lock for accessing pid_map */
+pthread_mutex_t mutex;
+
+int pid_map[PID_MAX+1];
+
+int last;	// last pid in use
+
+
+//File 2, pid.c
+
+#include "pid.h"
+#include <pthread.h>
+#include <stdio.h>
+
+/**
+ * Allocates the pid map.
+ */
+int allocate_map(void) 
+{
+}
+
+/**
+ * Allocates a pid
+ */
+int allocate_pid(void)
+{
+}
+/**
+ * Releases a pid
+ */
+void release_pid(int pid)
+{
+}
+
+
+//File , test.c 
+#include <pthread.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <time.h>
+#include "pid.h"
+
+#define NUM_THREADS 100
+#define ITERATIONS	10
+#define SLEEP		5
+
+int in_use[PID_MAX + 1];
+
+/**
+ * mutex lock used when accessing data structure
+ * to ensure there are no duplicate pid's in use.
+ */
+pthread_mutex_t test_mutex;
+
+void *allocator(void *param)
+{
+}
+
+int main(void)
+{
+	int i;
+	pthread_t tids[NUM_THREADS];
+
+	//Todo:
+
+	/* allocate the pid map */
+	if (allocate_map() == -1)
+		return -1;
+	
+	//Todo:
+	
+	printf("***DONE***\n");
+
+	return 0;
+}
+
+//File 4, Makefile, To run, enter "make all"
+
+all: testpid
+
+testpid: test.o pid.o
+	gcc  -lpthread -o testpid test.o pid.o
+
+pid.o: pid.c pid.h
+	gcc -c pid.c
+
+test.o: test.c pid.h
+	gcc -lpthread -c test.c

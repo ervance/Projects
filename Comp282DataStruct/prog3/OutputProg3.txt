@@ -1,0 +1,20 @@
+Eric Vance
+OK. OK. OK. OK. OK. OK. OK. OK. 
+OK. OK. OK. OK. OK. OK. OK. OK. 
+OK. OK. OK. OK. OK. OK. OK. OK. 
+OK. 
+****   End of 3-element tree checks.   ****
+
+OK. OK. OK. OK. OK. OK. OK. 
+OK. OK. OK. OK. OK. OK. OK. OK. 
+OK. OK. OK. OK. OK. OK. OK. OK. 
+OK. OK. OK. OK. OK. OK. OK. OK. 
+OK. 
+****   End of 11-element inserts and searches.   ****
+
+OK. OK. OK. OK. OK. OK. OK. 
+OK. 
+****   End of random tests.   ****
+
+
+All phases complete.
